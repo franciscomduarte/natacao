@@ -16,7 +16,7 @@
 
         $this->host = $host;
         $this->username = $user;
-        $this->password = "";
+        $this->password = $pass;
         $this->dbname = $dbname;
     }
      public function conectar() {
