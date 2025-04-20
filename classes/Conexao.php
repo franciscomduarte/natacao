@@ -1,11 +1,23 @@
 <?php
  class Conexao {
-     private $host = "mysql.l3swim.com.br";
-     private $dbname = "l3swim";
-     private $username = "l3swim";
-     private $password = "natacao09";
+     private $host;
+     private $dbname;
+     private $username;
+     private $password;
      private $conn;
  
+     public function __construct() {
+        Conexao::carregarEnv(__DIR__ . '/.env');
+        $host = getenv('DB_HOST');
+        $user = getenv('DB_USER');
+        $pass = getenv('DB_PASS');
+        $dbname = getenv('DB_NAME');
+
+        $this->host = $host;
+        $this->username = $user;
+        $this->password = "";
+        $this->dbname = $dbname;
+    }
      public function conectar() {
          if ($this->conn == null) {
              try {
@@ -19,6 +31,15 @@
          }
          return $this->conn;
      }
+
+    public static function carregarEnv($caminho) {
+        $linhas = file($caminho, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($linhas as $linha) {
+            if (strpos(trim($linha), '#') === 0) continue; // ignora comentários
+            list($chave, $valor) = explode('=', $linha, 2);
+            putenv(trim($chave) . '=' . trim($valor));
+        }
+    }
  }
  
  ?>
