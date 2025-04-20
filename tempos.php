@@ -121,10 +121,10 @@ if ($atletaSelecionado) {
                               <?= $indiceInverno25m == '' ? '-' : $indiceInverno25m . " <span style='font-size: 0.8em; color: " . ($diferencaInverno25m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaInverno25m) . ")</span>" ?>
                             </td>
                             <td>
-                              <?= $indiceInverno50m == '' ? '-' : $indiceInverno50m . " <span style='font-size: 0.8em; color: " . ($diferencaInverno50m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaInverno50m) . ")</span>" ?>
+                              <?= $indiceVerao25m == '' ? '-' : $indiceVerao25m . " <span style='font-size: 0.8em; color: " . ($diferencaVerao25m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaVerao25m) . ")</span>" ?>
                             </td>
                             <td>
-                              <?= $indiceVerao25m == '' ? '-' : $indiceVerao25m . " <span style='font-size: 0.8em; color: " . ($diferencaVerao25m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaVerao25m) . ")</span>" ?>
+                              <?= $indiceInverno50m == '' ? '-' : $indiceInverno50m . " <span style='font-size: 0.8em; color: " . ($diferencaInverno50m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaInverno50m) . ")</span>" ?>
                             </td>
                             <td>
                               <?= $indiceVerao50m == '' ? '-' : $indiceVerao50m . " <span style='font-size: 0.8em; color: " . ($diferencaVerao50m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaVerao50m) . ")</span>" ?>

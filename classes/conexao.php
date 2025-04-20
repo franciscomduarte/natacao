@@ -1,9 +1,10 @@
 <?php
 class Conexao {
-    private $host = "localhost";
-    private $dbname = "natacao";
-    private $username = "root";
-    private $password = "";
+    
+    private $host = "mysql.l3swim.com.br";
+    private $dbname = "l3swim";
+    private $username = "l3swim";
+    private $password = "natacao09";
     private $conn;
 
     public function conectar() {
