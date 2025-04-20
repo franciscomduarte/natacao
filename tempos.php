@@ -98,7 +98,8 @@ if ($atletaSelecionado) {
                               $diferencaInverno50m = tempoParaSegundos($tempo['tempo']) - tempoParaSegundos($indiceInverno50m);
                               $diferencaVerao50m = tempoParaSegundos($tempo['tempo']) - tempoParaSegundos($indiceVerao50m);
                       ?>
-                        <?php if ($indice25m[0]['estacao'] != 'ANUAL') { ?>
+                      <?php if (isset($indice25m[0]['estacao'])) { ?>
+                        <?php if ($indice25m[0]['estacao'] && $indice25m[0]['estacao'] != 'ANUAL') { ?>
                           <?php if ($contador <= 1) {?>
                           <tr>
                             <th>Prova</th>
@@ -154,7 +155,8 @@ if ($atletaSelecionado) {
                               <?= $indiceInverno50m == '' ? '-' : $indiceInverno50m . " <span style='font-size: 0.8em; color: " . ($diferencaInverno50m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaInverno50m) . ")</span>" ?>
                             </td>
                           </tr>
-                        <?php } ?>
+                        <?php } 
+                        }?>
                       <?php endforeach; ?>
                     </tbody>
                   </table>
