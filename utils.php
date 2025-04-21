@@ -1,7 +1,7 @@
 <?php
 
     function tempoParaSegundos($tempo) {
-        var_dump($tempo);
+
         if($tempo == '') 
             return 0;
         list($minutos, $resto) = explode(':', $tempo);
