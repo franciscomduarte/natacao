@@ -33,11 +33,12 @@
              return $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
 
-         public function obterTempoReferenciaFINA($prova, $sexo) {
-            $sql = "SELECT * FROM basetime WHERE prova = :prova AND sexo = :sexo";
+         public function obterTempoReferenciaFINA($prova, $sexo, $piscina) {
+            $sql = "SELECT * FROM basetime WHERE prova = :prova AND sexo = :sexo AND piscina = :piscina";
             $stmt = $this->conn->prepare($sql);
             $stmt->bindParam(':prova', $prova);
             $stmt->bindParam(':sexo', $sexo);
+            $stmt->bindParam(':piscina', $piscina);
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);
         }
