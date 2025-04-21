@@ -96,6 +96,13 @@
     </li>
 
     <li class="menu-item">
+        <a href="calculadora.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i>
+        <div data-i18n="Basic">Calculadora de I.T.</div>
+        </a>
+    </li>
+
+    <li class="menu-item">
         <a href="campeonatos.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div data-i18n="Basic">Campeonatos</div>

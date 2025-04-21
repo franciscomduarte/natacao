@@ -13,6 +13,12 @@
              $stmt = $this->conn->query($sql);
              return $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
+
+         public function listarProvasFINA() {
+            $sql = "SELECT * FROM basetime";
+            $stmt = $this->conn->query($sql);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
  
          public function listarIndice25m($prova, $categoria, $sexo) {
              if($sexo == 'MASCULINO') {
@@ -26,6 +32,15 @@
              $stmt->execute();
              return $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
+
+         public function obterTempoReferenciaFINA($prova, $sexo) {
+            $sql = "SELECT * FROM basetime WHERE prova = :prova AND sexo = :sexo";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->bindParam(':prova', $prova);
+            $stmt->bindParam(':sexo', $sexo);
+            $stmt->execute();
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        }
  
          public function listarIndice50m($prova, $categoria, $sexo) {
              if($sexo == 'MASCULINO') {
