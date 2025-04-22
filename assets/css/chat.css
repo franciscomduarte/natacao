@@ -1,0 +1,195 @@
+/* Estilo geral do chat */
+#chatbox {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    height: 400px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Mensagens do usuário */
+.text-right {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.text-right strong {
+    display: block;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.text-right div {
+    display: inline-block;
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* Mensagens do Ligeirinho */
+.text-left {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.text-left strong {
+    display: block;
+    color: #28a745;
+    margin-bottom: 5px;
+}
+
+.text-left div {
+    display: inline-block;
+    background-color: #e2f0d9;
+    color: #155724;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* Estilo do formulário de entrada */
+#formChat {
+    margin-top: 15px;
+}
+
+#mensagem {
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6366f1;
+    color: white;
+    font-size: 20px;
+    width: 70px; /* antes 50px */
+    height: 70px; /* antes 50px */
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+  
+  #chat-container {
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    z-index: 9998;
+  }
+  
+  .chat-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+  
+  .chat-header {
+    background: #6366f1;
+    color: white;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .chat-close {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .chat-body {
+    padding: 12px;
+    height: 300px;
+    overflow-y: auto;
+    background: #f9fafb;
+  }
+  
+  .chat-footer {
+    padding: 12px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .chat-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+
+    .chat-avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    #chat-widget {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 8px 12px;
+        border-radius: 30px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        z-index: 9999;
+        max-width: 300px; /* Limita o tamanho total */
+        transition: box-shadow 0.3s ease;
+    }
+    
+    #chat-widget:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    .chat-label {
+        font-size: 13px;
+        color: #333;
+        margin-right: 10px;
+        line-height: 1.2;
+        font-family: 'Segoe UI', sans-serif;
+        flex-shrink: 1;
+        max-width: 200px; /* Garante que o texto não estique demais */
+    }
+    
+    #chat-button {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        border: 2px solid #6366f1;
+        background: white;
+    }
+    
+    .chat-avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    

@@ -34,6 +34,7 @@
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="js/chat.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -72,48 +73,12 @@
             ]
         });
         });
+
+        function toggleChat() {
+            const chat = document.getElementById('chat-container');
+            chat.classList.toggle('d-none');
+        }
+
     </script>
 
-<script>
-  $(document).ready(function () {
-    $('#enviar').click(function () {
-      const pergunta = $('#pergunta').val().trim();
-      if (!pergunta) return;
-
-      adicionarMensagem('user', pergunta);
-      $('#pergunta').val('');
-      $('#enviar').prop('disabled', true);
-
-      $.ajax({
-        url: 'chatbot.php',
-        method: 'POST',
-        data: { pergunta },
-        success: function (response) {
-          adicionarMensagem('bot', response);
-        },
-        error: function () {
-          adicionarMensagem('bot', 'Ops! Algo deu errado.');
-        },
-        complete: function () {
-          $('#enviar').prop('disabled', false);
-        }
-      });
-    });
-
-    function adicionarMensagem(tipo, texto) {
-      const chat = $('#chatbox');
-      const html = tipo === 'bot' ? `
-        <div class="message bot">
-          <img src="assets/img/avatars/avatar-ligeirinho.png" class="avatar" alt="Ligeirinho">
-          <div class="text">${texto}</div>
-        </div>
-      ` : `
-        <div class="message user">
-          <div class="text">${texto}</div>
-        </div>
-      `;
-      chat.append(html);
-      chat.scrollTop(chat[0].scrollHeight);
-    }
-  });
 </script>

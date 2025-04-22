@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-
-<!-- =========================================================
-* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
-==============================================================
-
-* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
-* Created by: ThemeSelection
-* License: You must have a valid license purchased in order to legally use the theme for your project.
-* Copyright ThemeSelection (https://themeselection.com)
-
-=========================================================
- -->
-<!-- beautify ignore:start -->
 <html
   lang="en"
   class="light-style layout-menu-fixed"
@@ -136,79 +123,95 @@
                 </div>
                 <div class="col-lg-12 col-md-12 order-1">
                   <div class="row">
-                    <div class="col-lg-3 col-md-3 col-3 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <img
-                                src="assets/img/icons/unicons/chart-success.png"
-                                alt="chart success"
-                                class="rounded"
-                              />
+                    
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img
+                                            src="assets/img/icons/unicons/chart-success.png"
+                                            alt="chart success"
+                                            class="rounded"
+                                        />
+                                    </div>
+                                </div>
+                                <h3 class="card-title mb-2">Tempos x Indices</h3>
+                                <span class="fw-semibold d-block mb-1">Os brasileiros estão ai! Veja a tabela de indices e veja quanto falta pra você!</span>
+                                <a href="tempos.php" class="btn btn-primary">Ver mais</a>
                             </div>
-                          </div>
-                          <h3 class="card-title mb-2">Tempos x Indices</h3>
-                          <span class="fw-semibold d-block mb-1">Os brasileiros estão ai! Veja a tabela de indices e veja quanto falta pra você!</span>
-                          <a href="tempos.php" class="btn btn-primary">Ver mais</a>
                         </div>
-                      </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-3 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <img
-                                src="assets/img/icons/unicons/wallet-info.png"
-                                alt="Credit Card"
-                                class="rounded"
-                              />
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img
+                                            src="assets/img/icons/unicons/wallet-info.png"
+                                            alt="Credit Card"
+                                            class="rounded"
+                                        />
+                                    </div>
+                                </div>
+                                <h3 class="card-title text-nowrap mb-1">Resultados</h3>
+                                <span class="fw-semibold d-block mb-1">Encontre aqui os resultados das competições regionais e nacionais!</span>
+                                <a href="resultados.php" class="btn btn-primary">Ver mais</a>
                             </div>
-                          </div>
-                          <h3 class="card-title text-nowrap mb-1">Resultados</h3>
-                          <span class="fw-semibold d-block mb-1">Encontre aqui os resultados das competições regionais e nacionais!</span>
-                          <a href="resultados.php" class="btn btn-primary">Ver mais</a>
                         </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img
+                                            src="assets/img/icons/unicons/cc-primary.png"
+                                            alt="Credit Card"
+                                            class="rounded"
+                                        />
+                                    </div>
+                                </div>
+                                <h3 class="card-title text-nowrap mb-1">Calculadora de I.T</h3>
+                                <span class="fw-semibold d-block mb-1">Veja o seu indice Técnico de acordo com as regras da World Aquatics!</span>
+                                <a href="calculadora.php" class="btn btn-primary">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Widget do Chat com Avatar e Texto -->
+                    <div id="chat-widget" onclick="toggleChat()">
+                      <span class="chat-label">
+                        Conheça o <strong>Ligeirinho</strong><br>
+                        nosso especialista em natação
+                      </span>
+                      <div id="chat-button">
+                          <img src="assets/img/avatars/avatar.png" alt="Personagem do chat" class="chat-avatar">
                       </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-3 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <img
-                                src="assets/img/icons/unicons/cc-primary.png"
-                                alt="Credit Card"
-                                class="rounded"
-                              />
-                            </div>
+
+                      <!-- Janela do Chat -->
+                      <div id="chat-container" class="d-none">
+                        <div class="chat-card">
+                          <div class="chat-header">
+                            <span>Ligeirinho - Especialista em Natação</span>
+                            <span class="chat-close" onclick="toggleChat()">✖</span>
                           </div>
-                          <h3 class="card-title text-nowrap mb-1">Calculadora de I.T</h3>
-                          <span class="fw-semibold d-block mb-1">Veja o seu indice Técnico de acordo com as regras da World Aquatics!</span>
-                          <a href="calculadora.php" class="btn btn-primary">Ver mais</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-6 mb-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-
-                            <div class="card p-3 mb-4" id="chatbotCard">
-                              <h5 class="mb-3">Converse com <strong>Ligeirinho</strong> e tire suas dúvidas sobre as regras oficiais da Natação 🏊‍♂️</h5>
-                              <div id="chatbox" class="chatbox border p-3 rounded mb-3"></div>
-                              <div class="d-flex">
-                                <input type="text" id="pergunta" class="form-control me-2" placeholder="Digite sua pergunta sobre natação..." />
-                                <button id="enviar" class="btn btn-primary">Enviar</button>
-                              </div>
-                            </div>
+                          <div class="chat-body" id="chatbox">
+                            <!-- Mensagens vão aqui -->
+                          </div>
+                          <div class="chat-footer">
+                            <form id="formChat" class="d-flex gap-2">
+                              <input type="text" id="mensagem" class="form-control" placeholder="Digite sua pergunta..." required>
+                              <button class="btn btn-primary" type="submit">Enviar</button>
+                            </form>
                           </div>
                         </div>
                       </div>
-                    </div>
                     
                   </div>
                 </div>
