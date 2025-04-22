@@ -155,7 +155,8 @@ if ($atletaSelecionado) {
                               <?= $indiceInverno50m == '' ? '-' : $indiceInverno50m . " <span style='font-size: 0.8em; color: " . ($diferencaInverno50m > 0 ? 'red' : 'green') . ";'> (" . segundosParaTempo($diferencaInverno50m) . ")</span>" ?>
                             </td>
                           </tr>
-                        <?php } ?>
+                        <?php } 
+                        }?>
                       <?php endforeach; ?>
                     </tbody>
                   </table>

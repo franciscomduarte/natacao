@@ -43,11 +43,11 @@ function calcularPontuacaoFINA($tempoAtleta, $tempoReferencia) {
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">FINA /</span> Cálculo de Índice Técnico</h4>
 
-                        <div class="row mb-4">
-                            <div class="col-md-12">
-                                <div class="card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4">
                                     <div class="card-body">
-                                        <h5 class="card-title">Pontuação de Natação World Aquatics (FINA)</h5>
+                                        <h5 class="card-title">Informações sobre a Pontuação FINA</h5>
                                         <p class="card-text">
                                             A Tabela de Pontuação da World Aquatics permite comparações de resultados entre diferentes provas.
                                             A pontuação da World Aquatics atribui valores de pontos às performances na natação — mais pontos para
@@ -84,69 +84,68 @@ function calcularPontuacaoFINA($tempoAtleta, $tempoReferencia) {
                                             Os tempos base são publicados no site da World Aquatics até um mês após o fim do respectivo período.
                                             Os arquivos publicados contêm a fórmula, os tempos base usados no cálculo e a pontuação que seria atribuída aos
                                             atletas com base em seus tempos em LCM ou SCM.
-                                        </p>
-                                        <p class="card-text">
                                             <span>Veja os tempos base da FINA de 2025 <a href="https://resources.fina.org/fina/document/2025/01/08/baaf68c9-0118-42c3-ac3f-e11ce013fd8a/Points-Base-times-SCM-and-LCM-2025.pdf" target="_blank">aqui</a></span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Calcular Pontuação FINA</h5>
-                                <form method="POST">
-                                    <div class="row">
-                                        <div class="col-md-3 mb-3">
-                                            <label for="prova" class="form-label">Prova</label>
-                                            <select name="prova" class="form-control" required>
-                                                <option value="">Selecione uma prova</option>
-                                                <?php foreach ($provas as $p) : ?>
-                                                    <option value="<?= $p['prova'] ?>" <?= ($p['prova'] == ($_POST['prova'] ?? '')) ? 'selected' : '' ?>>
-                                                        <?= $p['prova'] ?>
-                                                    </option>
-                                                <?php endforeach; ?>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label for="sexo" class="form-label">Sexo</label>
-                                            <select name="sexo" class="form-control" required>
-                                                <option value="">Selecione o sexo</option>
-                                                <option value="M" <?= (($_POST['sexo'] ?? '') == 'M') ? 'selected' : '' ?>>Masculino</option>
-                                                <option value="F" <?= (($_POST['sexo'] ?? '') == 'F') ? 'selected' : '' ?>>Feminino</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label for="piscina" class="form-label">Piscina</label>
-                                            <select name="piscina" class="form-control" required>
-                                                <option value="">Selecione a piscina</option>
-                                                <option value="25" <?= (($_POST['piscina'] ?? '') == '25') ? 'selected' : '' ?>>25 Metros</option>
-                                                <option value="50" <?= (($_POST['piscina'] ?? '') == '50') ? 'selected' : '' ?>>50 Metros</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label for="tempo" class="form-label">Tempo (ex: 01:02.34)</label>
-                                            <input type="text" id="tempo" placeholder="00:00:00" class="form-control" name="tempo" value="<?= $_POST['tempo'] ?? '' ?>" required>
-                                        </div>
-                                        <div class="col-md-2 d-flex align-items-end">
-                                            <button type="submit" class="btn btn-primary w-100">Calcular</button>
-                                        </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Calcular Pontuação FINA</h5>
+                                        <form method="POST">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="prova" class="form-label">Prova</label>
+                                                    <select name="prova" class="form-control" required>
+                                                        <option value="">Selecione uma prova</option>
+                                                        <?php foreach ($provas as $p) : ?>
+                                                            <option value="<?= $p['prova'] ?>" <?= ($p['prova'] == ($_POST['prova'] ?? '')) ? 'selected' : '' ?>>
+                                                                <?= $p['prova'] ?>
+                                                            </option>
+                                                        <?php endforeach; ?>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="sexo" class="form-label">Sexo</label>
+                                                    <select name="sexo" class="form-control" required>
+                                                        <option value="">Selecione o sexo</option>
+                                                        <option value="M" <?= (($_POST['sexo'] ?? '') == 'M') ? 'selected' : '' ?>>Masculino</option>
+                                                        <option value="F" <?= (($_POST['sexo'] ?? '') == 'F') ? 'selected' : '' ?>>Feminino</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="piscina" class="form-label">Piscina</label>
+                                                    <select name="piscina" class="form-control" required>
+                                                        <option value="">Selecione a piscina</option>
+                                                        <option value="25" <?= (($_POST['piscina'] ?? '') == '25') ? 'selected' : '' ?>>25 Metros</option>
+                                                        <option value="50" <?= (($_POST['piscina'] ?? '') == '50') ? 'selected' : '' ?>>50 Metros</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="tempo" class="form-label">Tempo (ex: 01:02.34)</label>
+                                                    <input type="text" id="tempo" placeholder="00:00:00" class="form-control" name="tempo" value="<?= $_POST['tempo'] ?? '' ?>" required>
+                                                </div>
+                                                <div class="col-md-12 d-flex justify-content-end">
+                                                    <button type="submit" class="btn btn-primary">Calcular</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
+
+                                <?php if ($resultado): ?>
+                                    <div class="card p-4">
+                                        <h5 class="card-title">Resultado</h5>
+                                        <p class="card-text"><strong>Prova:</strong> <?= htmlspecialchars($_POST['prova']) ?></p>
+                                        <p class="card-text"><strong>Sexo:</strong> <?= htmlspecialchars($_POST['sexo'] == 'M' ? 'Masculino' : 'Feminino') ?></p>
+                                        <p class="card-text"><strong>Tempo do atleta:</strong> <?= $resultado['tempo'] ?></p>
+                                        <p class="card-text"><strong>Tempo de referência:</strong> <?= $resultado['referencia'] ?></p>
+                                        <p class="card-text"><strong>Pontuação FINA:</strong> <?= $resultado['pontos'] ?></p>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </div>
-
-                        <?php if ($resultado): ?>
-                            <div class="card p-4">
-                                <h5 class="card-title">Resultado</h5>
-                                <p class="card-text"><strong>Prova:</strong> <?= htmlspecialchars($_POST['prova']) ?></p>
-                                <p class="card-text"><strong>Sexo:</strong> <?= htmlspecialchars($_POST['sexo'] == 'M' ? 'Masculino' : 'Feminino') ?></p>
-                                <p class="card-text"><strong>Tempo do atleta:</strong> <?= $resultado['tempo'] ?></p>
-                                <p class="card-text"><strong>Tempo de referência:</strong> <?= $resultado['referencia'] ?></p>
-                                <p class="card-text"><strong>Pontuação FINA:</strong> <?= $resultado['pontos'] ?></p>
-                            </div>
-                        <?php endif; ?>
 
                     </div>
                 </div>
