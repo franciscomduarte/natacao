@@ -32,12 +32,65 @@
   ?>
 
 <style>
+
 .imagem-centralizada {
   display: block;
   margin: 45px auto;
   border-radius: 12px;
   max-width: 300px;
 }
+
+.chatbox {
+  height: 200px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.message {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.message.user {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.message .text {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.message.user .text {
+  background-color: #007bff;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.message.bot .text {
+  background-color: #e9ecef;
+  color: #333;
+  border-bottom-left-radius: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 </style>
 
   <body>
@@ -56,7 +109,7 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row">
-                <div class="col-lg-8 mb-4 order-0">
+                <div class="col-lg-12 mb-4 order-0">
                   <div class="card">
                     <div class="d-flex align-items-end row">
                       <div class="col-sm-7">
@@ -81,9 +134,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 order-1">
+                <div class="col-lg-12 col-md-12 order-1">
                   <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                    <div class="col-lg-3 col-md-3 col-3 mb-3">
                       <div class="card">
                         <div class="card-body">
                           <div class="card-title d-flex align-items-start justify-content-between">
@@ -101,7 +154,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                    <div class="col-lg-3 col-md-3 col-3 mb-3">
                       <div class="card">
                         <div class="card-body">
                           <div class="card-title d-flex align-items-start justify-content-between">
@@ -119,11 +172,51 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="col-lg-3 col-md-3 col-3 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img
+                                src="assets/img/icons/unicons/cc-primary.png"
+                                alt="Credit Card"
+                                class="rounded"
+                              />
+                            </div>
+                          </div>
+                          <h3 class="card-title text-nowrap mb-1">Calculadora de I.T</h3>
+                          <span class="fw-semibold d-block mb-1">Veja o seu indice Técnico de acordo com as regras da World Aquatics!</span>
+                          <a href="calculadora.php" class="btn btn-primary">Ver mais</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-6 mb-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+
+                            <div class="card p-3 mb-4" id="chatbotCard">
+                              <h5 class="mb-3">Converse com <strong>Ligeirinho</strong> e tire suas dúvidas sobre as regras oficiais da Natação 🏊‍♂️</h5>
+                              <div id="chatbox" class="chatbox border p-3 rounded mb-3"></div>
+                              <div class="d-flex">
+                                <input type="text" id="pergunta" class="form-control me-2" placeholder="Digite sua pergunta sobre natação..." />
+                                <button id="enviar" class="btn btn-primary">Enviar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     
                   </div>
                 </div>
               </div>
             </div>
+
+
+
             </div>
             <!-- / Content -->
 
@@ -134,27 +227,7 @@
                   ©
                   <script>
                     document.write(new Date().getFullYear());
-                  </script>
-                  , made with ❤️ by
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
-                </div>
-                <div>
-                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-                  <a
-                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                    target="_blank"
-                    class="footer-link me-4"
-                    >Documentation</a
-                  >
-
-                  <a
-                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                    target="_blank"
-                    class="footer-link me-4"
-                    >Support</a
-                  >
+                  </script>, made by <a mailto="francisco.m.duarte@gmail.com"><b>Francisco Molina</b></a>
                 </div>
               </div>
             </footer>

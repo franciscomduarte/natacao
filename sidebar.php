@@ -103,6 +103,13 @@
     </li>
 
     <li class="menu-item">
+        <a href="bolsa-atleta.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i>
+        <div data-i18n="Basic">Documentação Bolsa Atleta</div>
+        </a>
+    </li>
+
+    <li class="menu-item">
         <a href="campeonatos.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div data-i18n="Basic">Campeonatos</div>

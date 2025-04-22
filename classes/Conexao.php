@@ -1,4 +1,6 @@
 <?php
+
+ include_once("utils.php");
  class Conexao {
      private $host;
      private $dbname;
@@ -7,7 +9,7 @@
      private $conn;
  
      public function __construct() {
-        Conexao::carregarEnv(__DIR__ . '/.env');
+        carregarEnv('.env');
 
         $host = $_ENV['DB_HOST'];
         $dbname = $_ENV['DB_NAME'];
@@ -32,16 +34,6 @@
          }
          return $this->conn;
      }
-
-     public static function carregarEnv($caminho) {
-        if (!file_exists($caminho)) return;
-        $linhas = file($caminho, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        foreach ($linhas as $linha) {
-            if (strpos(trim($linha), '#') === 0) continue;
-            list($chave, $valor) = explode('=', $linha, 2);
-            $_ENV[trim($chave)] = trim($valor);
-        }
-    }
  }
  
  ?>
