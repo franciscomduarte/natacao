@@ -1,5 +1,14 @@
 <?php
 
+    require_once 'libs/pdfparser/alt_autoload.php-dist';
+    
+    if (!function_exists('str_ends_with')) {
+        function str_ends_with($haystack, $needle) {
+            $len = strlen($needle);
+            return $len === 0 || substr($haystack, -$len) === $needle;
+        }
+    }
+
     function tempoParaSegundos($tempo) {
 
         if($tempo == '') 
@@ -29,79 +38,100 @@
         }
     }
 
-    function vetorizar($texto) {
-        $texto = strtolower(preg_replace("/[^a-z0-9 ]/", "", $texto));
-        $palavras = explode(" ", $texto);
-        $vetor = [];
-        foreach ($palavras as $p) {
-            if (!empty($p)) {
-                $vetor[$p] = ($vetor[$p] ?? 0) + 1;
+function carregar_documentos($pasta) {
+    $docs = [];
+    foreach (glob($pasta . "*.txt") as $arquivo) {
+        $conteudo = file_get_contents($arquivo);
+        $docs[] = $conteudo;
+    }
+    return $docs;
+}
+
+function limpar_texto($texto) {
+    $texto = strtolower($texto);
+    $tokens = explode(' ', $texto);
+    $tokens = array_filter($tokens, fn($t) => strlen($t) > 2);
+    return array_map('stem_palavra', $tokens);
+}
+
+function stem_palavra($palavra) {
+    $sufixos = ['ções', 'sões', 'mente', 'dade', 'rão', 'ção', 'são', 'ndo', 'nte', 'ar', 'er', 'ir', 'es', 'as', 'os', 'is', 'am', 'ou', 'ei', 'ia', 'al', 'el', 'il'];
+    foreach ($sufixos as $sufixo) {
+        if (str_ends_with($palavra, $sufixo)) {
+            return substr($palavra, 0, -strlen($sufixo));
+        }
+    }
+    return $palavra;
+}
+
+function buscar_trecho_relacionado($pergunta, $documentos, $limite_similaridade = 0.75) {
+    $tokens_pergunta = limpar_texto($pergunta);
+    $pontuacoes = [];
+
+    foreach ($documentos as $doc) {
+        $tokens_doc = limpar_texto($doc);
+        $matchCount = 0;
+
+        foreach ($tokens_pergunta as $token_p) {
+            foreach ($tokens_doc as $token_d) {
+                $dist = levenshtein($token_p, $token_d);
+                $maxLen = max(strlen($token_p), strlen($token_d));
+                $sim = ($maxLen > 0) ? 1 - ($dist / $maxLen) : 0;
+
+                if ($sim > 0.8) {
+                    $matchCount++;
+                    break;
+                }
             }
         }
-        return $vetor;
+
+        $similaridade = $matchCount / count($tokens_pergunta);
+        $pontuacoes[] = ['texto' => $doc, 'score' => $similaridade];
     }
 
-    function cosseno($v1, $v2) {
-        $dot = 0;
-        $norma1 = 0;
-        $norma2 = 0;
+    usort($pontuacoes, fn($a, $b) => $b['score'] <=> $a['score']);
+    $melhor = $pontuacoes[0] ?? null;
 
-        $todasChaves = array_unique(array_merge(array_keys($v1), array_keys($v2)));
+    return ($melhor && $melhor['score'] >= $limite_similaridade) ? $melhor['texto'] : null;
+}
+function buscar_prova_no_json($pergunta, $json, $limite_similaridade = 0.75) {
+    $tokens_pergunta = limpar_texto($pergunta);
+    $pontuacoes = [];
 
-        foreach ($todasChaves as $chave) {
-            $a = $v1[$chave] ?? 0;
-            $b = $v2[$chave] ?? 0;
-            $dot += $a * $b;
-            $norma1 += $a * $a;
-            $norma2 += $b * $b;
-        }
+    foreach ($json['provas'] as $prova) {
+        $bloco = $prova['prova'] . ' ' . $prova['descricao'] . ' ' . $prova['categoria'] . ' ' . $prova['data'];
+        $tokens_bloco = limpar_texto($bloco);
 
-        return $norma1 && $norma2 ? $dot / (sqrt($norma1) * sqrt($norma2)) : 0;
-    }
+        $matchCount = 0;
 
-    function buscarTrechoMaisProximo($pergunta, $documentos) {
-        $vetorPergunta = vetorizar($pergunta);
-        $melhorTrecho = "";
-        $melhorScore = -1;
+        foreach ($tokens_pergunta as $token_p) {
+            foreach ($tokens_bloco as $token_d) {
+                $dist = levenshtein($token_p, $token_d);
+                $maxLen = max(strlen($token_p), strlen($token_d));
+                $sim = ($maxLen > 0) ? 1 - ($dist / $maxLen) : 0;
 
-        foreach ($documentos as $trecho) {
-            $vetorTrecho = vetorizar($trecho);
-            $score = cosseno($vetorPergunta, $vetorTrecho);
-            if ($score > $melhorScore) {
-                $melhorScore = $score;
-                $melhorTrecho = $trecho;
+                if ($sim > 0.8) {
+                    $matchCount++;
+                    break;
+                }
             }
         }
 
-        return $melhorTrecho;
+        $similaridade = $matchCount / count($tokens_pergunta);
+        $pontuacoes[] = ['prova' => $prova, 'score' => $similaridade];
     }
 
+    usort($pontuacoes, fn($a, $b) => $b['score'] <=> $a['score']);
+    $melhor = $pontuacoes[0] ?? null;
 
-    function carregar_documentos($pasta) {
-        $docs = [];
-        foreach (glob($pasta . "*.txt") as $arquivo) {
-            $conteudo = file_get_contents($arquivo);
-            $docs[] = $conteudo;
+    if ($melhor && $melhor['score'] >= $limite_similaridade) {
+        $prova = $melhor['prova'];
+        $resumo = "Resultado da {$prova['prova']} - {$prova['descricao']} (Categoria: {$prova['categoria']}, Data: {$prova['data']}):\n";
+        foreach ($prova['resultados'] as $res) {
+            $resumo .= "- {$res['colocacao']}: {$res['atleta']} ({$res['tempo']})\n";
         }
-        return $docs;
+        return $resumo;
     }
 
-    function buscar_trecho_relacionado($pergunta, $documentos, $limite_similaridade = 0.75) {
-        $tokens_pergunta = explode(' ', strtolower($pergunta));
-        $pontuacoes = [];
-
-        foreach ($documentos as $doc) {
-            $tokens_doc = explode(' ', strtolower($doc));
-            $intersecao = array_intersect($tokens_pergunta, $tokens_doc);
-            $similaridade = count($intersecao) / sqrt(count($tokens_pergunta) * count($tokens_doc));
-            $pontuacoes[] = ['texto' => $doc, 'score' => $similaridade];
-        }
-
-        usort($pontuacoes, fn($a, $b) => $b['score'] <=> $a['score']);
-        $melhor = $pontuacoes[0] ?? null;
-
-        return ($melhor && $melhor['score'] >= $limite_similaridade) ? $melhor['texto'] : null;
-    }
-?>
-
-    
+    return null;
+}

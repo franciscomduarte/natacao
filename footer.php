@@ -36,6 +36,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="js/chat.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+
     <script>
         $(document).ready(function() {
         $('#tabelaResultados').DataTable({
@@ -72,6 +74,7 @@
             { targets: '_all', className: 'align-middle' }
             ]
         });
+
         });
 
         function toggleChat() {
@@ -79,6 +82,16 @@
             chat.classList.toggle('d-none');
         }
 
-    </script>
+        new TomSelect("#select-atleta, #select-info", {
+            create: false,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            },
+            maxOptions: 1000, // caso tenha muitos atletas
+            persist: false,
+            searchField: ["text"],
+            placeholder: "Digite para buscar..."
+        });
 
-</script>
+    </script>

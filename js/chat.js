@@ -16,6 +16,7 @@ $(document).ready(function() {
             data: { mensagem: mensagem },
             dataType: 'json',
             success: function(response) {
+                console.log(response);
                 // Exibe a resposta do chatbot no chat
                 $('#chatbox').append('<div class="text-left"><strong>Ligeirinho:</strong> ' + response.resposta + '</div>');
                 $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);

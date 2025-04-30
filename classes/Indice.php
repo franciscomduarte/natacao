@@ -38,7 +38,7 @@
             $stmt = $this->conn->prepare($sql);
             $stmt->bindParam(':prova', $prova);
             $stmt->bindParam(':sexo', $sexo);
-            
+            $stmt->bindParam(':piscina', $piscina);
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);
         }

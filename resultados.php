@@ -19,7 +19,11 @@ $filtros = [
     'piscina' => $_GET['piscina'] ?? ''
 ];
 
-$resultados = $resultadoObj->filtrarResultados($filtros);
+// Só busca resultados se tiver filtro preenchido
+$resultados = [];
+if (!empty($_GET)) {
+    $resultados = $resultadoObj->filtrarResultados($filtros);
+}
 ?>
 
 <style>
@@ -52,7 +56,7 @@ $resultados = $resultadoObj->filtrarResultados($filtros);
                   <div class="row">
                     <div class="col-md-3">
                       <label>Campeonato</label>
-                      <select name="campeonato" class="form-control">
+                      <select id="select-info" name="campeonato" class="form-control">
                         <option value="">Todos</option>
                         <?php foreach ($campeonatos as $c) : ?>
                           <option value="<?= $c['id'] ?>" <?= $c['id'] == $filtros['campeonato'] ? 'selected' : '' ?>>
@@ -63,7 +67,7 @@ $resultados = $resultadoObj->filtrarResultados($filtros);
                     </div>
                     <div class="col-md-3">
                       <label>Entidade</label>
-                      <select name="entidade" class="form-control">
+                      <select id="select-info" name="entidade" class="form-control">
                         <option value="">Todos</option>
                         <?php foreach ($entidades as $e) : ?>
                           <option value="<?= $e['entidade'] ?>" <?= $e['entidade'] == $filtros['entidade'] ? 'selected' : '' ?>>
@@ -98,28 +102,32 @@ $resultados = $resultadoObj->filtrarResultados($filtros);
               <div class="table-responsive">
                 <table id="tabelaResultados" class="table table-striped table-bordered nowrap" style="width:100%">
                     <thead class="table-light">
-                    <tr>
-                      <th>Campeonato</th>
-                      <th>Ano</th>
-                      <th>Prova</th>
-                      <th>Atleta</th>
-                      <th>Entidade</th>
-                      <th>Tempo</th>
-                      <th>Colocação</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php foreach ($resultados as $res) : ?>
                       <tr>
-                        <td><?= $res['campeonato'] ?></td>
-                        <td><?= $res['ano'] ?></td>
-                        <td><?= $res['descricao'] ?></td>
-                        <td><?= $res['atleta'] ?></td>
-                        <td><?= $res['entidade'] ?></td>
-                        <td><?= $res['tempo'] ?></td>
-                        <td><?= $res['colocacao'] ?></td>
+                        <th>Campeonato</th>
+                        <th>Ano</th>
+                        <th>Prova</th>
+                        <th>Atleta</th>
+                        <th>Entidade</th>
+                        <th>Tempo</th>
+                        <th>Colocação</th>
                       </tr>
-                    <?php endforeach; ?>
+                    </thead>
+                  <tbody>
+                    <?php if (empty($resultados)) : ?>
+                      <span>Nenhum resultado encontrado</span>
+                    <?php else : ?>
+                      <?php foreach ($resultados as $res) : ?>
+                        <tr>
+                          <td><?= htmlspecialchars($res['campeonato']) ?></td>
+                          <td><?= htmlspecialchars($res['ano']) ?></td>
+                          <td><?= htmlspecialchars($res['descricao']) ?></td>
+                          <td><?= htmlspecialchars($res['nome']) ?></td>
+                          <td><?= htmlspecialchars($res['entidade']) ?></td>
+                          <td><?= htmlspecialchars($res['tempo']) ?></td>
+                          <td><?= htmlspecialchars($res['colocacao']) ?></td>
+                        </tr>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   </tbody>
                 </table>
               </div>

@@ -14,7 +14,7 @@
      }
  
      public function listarAtletas() {
-         $sql = "SELECT distinct atleta FROM resultado Order by atleta";
+         $sql = "SELECT nome FROM atleta Order by nome";
          $stmt = $this->conn->query($sql);
          return $stmt->fetchAll(PDO::FETCH_ASSOC);
      }
@@ -52,7 +52,7 @@
                  c.ano AS ano,
                  p.data AS data,
                  p.descricao AS descricao,
-                 r.atleta,
+                 a.nome,
                  r.entidade,
                  r.tempo,
                  r.colocacao,
@@ -60,22 +60,21 @@
              FROM resultado r
              INNER JOIN prova p ON r.prova_id = p.id
              INNER JOIN campeonato c ON p.campeonato_id = c.id
+             INNER JOIN atleta a ON r.atleta_id = a.id
              WHERE 1=1
          ";
  
          $params = [];
  
          // Filtros dinâmicos
-         if (!empty($filtros['campeonatos'])) {
-             $placeholders = implode(',', array_fill(0, count($filtros['campeonatos']), '?'));
-             $sql .= " AND c.id IN ($placeholders)";
-             $params = array_merge($params, $filtros['campeonatos']);
+         if (!empty($filtros['campeonato'])) {
+             $sql .= " AND c.id = ?";
+             $params[] = $filtros['campeonato'];
          }
  
-         if (!empty($filtros['entidades'])) {
-             $placeholders = implode(',', array_fill(0, count($filtros['entidades']), '?'));
-             $sql .= " AND r.entidade IN ($placeholders)";
-             $params = array_merge($params, $filtros['entidades']);
+         if (!empty($filtros['entidade'])) {
+             $sql .= " AND r.entidade = ? ";
+             $params[] = $filtros['entidade'];
          }
  
          if (!empty($filtros['ano'])) {
@@ -89,7 +88,7 @@
          }
  
          $sql .= " ORDER BY p.data, p.descricao, r.colocacao";
- 
+
          $stmt = $this->conn->prepare($sql);
          $stmt->execute($params);
          return $stmt->fetchAll(PDO::FETCH_ASSOC);

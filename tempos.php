@@ -44,11 +44,11 @@ if ($atletaSelecionado) {
                   <div class="row">
                     <div class="col-md-6">
                       <label>Atleta</label>
-                      <select name="atleta" class="form-control" required>
+                      <select id="select-atleta" name="atleta" class="form-control" required>
                         <option value="">Selecione um atleta</option>
                         <?php foreach ($atletas as $atleta) : ?>
-                          <option value="<?= $atleta['atleta'] ?>" <?= $atleta['atleta'] == $atletaSelecionado ? 'selected' : '' ?>>
-                            <?= $atleta['atleta'] ?>
+                          <option value="<?= $atleta['nome'] ?>" <?= $atleta['nome'] == $atletaSelecionado ? 'selected' : '' ?>>
+                            <?= $atleta['nome'] ?>
                           </option>
                         <?php endforeach; ?>
                       </select>
