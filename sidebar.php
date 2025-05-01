@@ -2,7 +2,7 @@
 
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo">
-    <a href="index.php" class="app-brand-link">
+    <a href="<?= BASE_URL ?>/index.php" class="app-brand-link">
         <span class="app-brand-logo demo">
         <svg
             width="25"
@@ -82,40 +82,73 @@
     <!-- Cards -->
 
     <li class="menu-item">
-        <a href="tempos.php" class="menu-link">
+        <a href="<?= BASE_URL ?>/publico/tempos.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div data-i18n="Basic">Tempos x Indíces</div>
         </a>
     </li>
 
     <li class="menu-item">
-        <a href="resultados.php" class="menu-link">
+        <a href="<?= BASE_URL ?>/publico/resultados.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div data-i18n="Basic">Resultados</div>
         </a>
     </li>
 
     <li class="menu-item">
-        <a href="calculadora.php" class="menu-link">
+        <a href="<?= BASE_URL ?>/publico/calculadora.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div data-i18n="Basic">Calculadora de I.T.</div>
         </a>
     </li>
 
     <li class="menu-item">
-        <a href="bolsa-atleta.php" class="menu-link">
+        <a href="<?= BASE_URL ?>/publico/bolsa-atleta.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div data-i18n="Basic">Documentação Bolsa Atleta</div>
         </a>
     </li>
 
     <li class="menu-item">
-        <a href="campeonatos.php" class="menu-link">
+        <a href="<?= BASE_URL ?>/publico/campeonatos.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div data-i18n="Basic">Campeonatos</div>
         </a>
     </li>
 
+
+    <?php if (isset($_SESSION['usuario_logado'])) { ?>
+    <li class="menu-item">
+        <a href="<?= BASE_URL ?>/private/atleta" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i> 
+        <div data-i18n="Basic">Gestão de Atleta</div>
+        </a>
+    </li>
+
+    <li class="menu-item">
+        <a href="<?= BASE_URL ?>/private/inconsistencia" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i> 
+        <div data-i18n="Basic">Inconsistências</div>
+        </a>
+    </li>
+    <?php } ?>
+
+    <?php if (!isset($_SESSION['usuario_logado'])) { ?>
+    <li class="menu-item">
+        <a href="<?= BASE_URL ?>/login.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i> 
+        <div data-i18n="Basic">Acesso Restrito</div>
+        </a>
+    </li>
+
+    <?php } else { ?>
+    <li class="menu-item">
+        <a href="<?= BASE_URL ?>/logout.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i> 
+        <div data-i18n="Basic">Sair</div>
+        </a>
+    </li>
+    <?php } ?>
     <!-- User interface -->
 
     </ul>

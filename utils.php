@@ -1,6 +1,15 @@
 <?php
 
     require_once 'libs/pdfparser/alt_autoload.php-dist';
+
+    function resumirProva($descricaoCompleta) {
+        if (preg_match('/(\d+)\s+METROS\s+([A-ZÇ]+)/i', $descricaoCompleta, $matches)) {
+            $distancia = $matches[1];
+            $estilo = strtoupper(substr($matches[2], 0, 1)); // Primeira letra do estilo
+            return "{$distancia} {$estilo}";
+        }
+        return $descricaoCompleta; // Retorna original se padrão não for encontrado
+    }
     
     if (!function_exists('str_ends_with')) {
         function str_ends_with($haystack, $needle) {

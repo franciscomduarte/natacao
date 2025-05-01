@@ -1,6 +1,5 @@
 <?php
-include("head.php");
-include("utils.php");
+include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
 
 $db = new Conexao();
 $pdo = $db->conectar();
@@ -37,7 +36,7 @@ function calcularPontuacaoFINA($tempoAtleta, $tempoReferencia) {
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include("sidebar.php"); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
             <div class="layout-page">
                 <div class="content-wrapper">
                     <div class="container-xxl flex-grow-1 container-p-y">
@@ -152,7 +151,7 @@ function calcularPontuacaoFINA($tempoAtleta, $tempoReferencia) {
             </div>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/natacao/footer.php'; ?>
 
     <script>
         $(document).ready(function(){

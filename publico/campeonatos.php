@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html
-  lang="en"
-  class="light-style layout-menu-fixed"
-  dir="ltr"
-  data-theme="theme-default"
-  data-assets-path="assets/"
-  data-template="vertical-menu-template-free"
->
-  <?php include("head.php");
+<?php
+  
+  include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
   
   $db = new Conexao();
   $pdo = $db->conectar();
@@ -29,7 +22,7 @@
       <div class="layout-container">
         <!-- Menu -->
 
-        <?php include("sidebar.php"); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
 
         <!-- Layout container -->
         <div class="layout-page">
@@ -84,7 +77,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <?php include 'footer.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/natacao/footer.php"; ?>
   </body>
 
 </html>

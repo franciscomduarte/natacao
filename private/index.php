@@ -8,7 +8,7 @@
   data-template="vertical-menu-template-free"
 >
   <?php 
-    include('head.php'); 
+    include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php"); 
     
     $db = new Conexao();
     $pdo = $db->conectar();
@@ -85,7 +85,7 @@
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
         
-        <?php include('sidebar.php'); ?>
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
 
         <!-- Layout container -->
         <div class="layout-page">
@@ -230,7 +230,7 @@
                   ©
                   <script>
                     document.write(new Date().getFullYear());
-                  </script>, made by <a mailto="francisco.m.duarte@gmail.com"><b>Francisco Molina</b></a>
+                  </script>, made by <a mailto="francisco.m.duarte@gmail.com"><b>Francisco Molina111</b></a> | <a href="login.php">Acesso Restrito</a>
                 </div>
               </div>
             </footer>
@@ -248,7 +248,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <?php include 'footer.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/natacao/footer.php"; ?>
 
   </body>
 </html>
