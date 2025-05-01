@@ -1,6 +1,6 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sessao.php");
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
+include_once("../config.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 
 $db = new Conexao();
 $pdo = $db->conectar();
@@ -9,11 +9,23 @@ $obj = new Resultado($pdo);
 $ano = $_GET['ano'] ?? date('Y');
 $dados = $obj->calcularBolsaAtletaEstudantil($ano);
 ?>
+<style>
+    .container-resultados {
+        padding: 20px;
+    }
 
+    .dt-buttons {
+        margin-bottom: 15px;
+    }
+
+    #tabela_resultados {
+        margin-top: 10px;
+    }
+</style>
 <body>
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
-        <?php include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sidebar.php"); ?>
         <div class="layout-page">
             <div class="content-wrapper">
                 <div class="container-xxl flex-grow-1 container-p-y">
@@ -28,7 +40,7 @@ $dados = $obj->calcularBolsaAtletaEstudantil($ano);
                         </select>
                     </form>
 
-                    <table class="table table-bordered table-hover">
+                    <table id="tabelaResultados" class="table table-striped table-bordered">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -84,5 +96,5 @@ $dados = $obj->calcularBolsaAtletaEstudantil($ano);
     </div>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . "/natacao/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/footer.php"); ?>
 </body>

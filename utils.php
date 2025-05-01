@@ -36,111 +36,100 @@
         $tempoFormatado = sprintf('%02d:%05.2f', $min, $seg);
         return $negativo ? "-$tempoFormatado" : $tempoFormatado;
     }
-        
-    function carregarEnv($caminho) {
-        if (!file_exists($caminho)) return;
-        $linhas = file($caminho, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        foreach ($linhas as $linha) {
-            if (strpos(trim($linha), '#') === 0) continue;
-            list($chave, $valor) = explode('=', $linha, 2);
-            $_ENV[trim($chave)] = trim($valor);
+    function carregar_documentos($pasta) {
+        $docs = [];
+        foreach (glob($pasta . "*.txt") as $arquivo) {
+            $conteudo = file_get_contents($arquivo);
+            $docs[] = $conteudo;
         }
+        return $docs;
     }
 
-function carregar_documentos($pasta) {
-    $docs = [];
-    foreach (glob($pasta . "*.txt") as $arquivo) {
-        $conteudo = file_get_contents($arquivo);
-        $docs[] = $conteudo;
+    function limpar_texto($texto) {
+        $texto = strtolower($texto);
+        $tokens = explode(' ', $texto);
+        $tokens = array_filter($tokens, fn($t) => strlen($t) > 2);
+        return array_map('stem_palavra', $tokens);
     }
-    return $docs;
-}
 
-function limpar_texto($texto) {
-    $texto = strtolower($texto);
-    $tokens = explode(' ', $texto);
-    $tokens = array_filter($tokens, fn($t) => strlen($t) > 2);
-    return array_map('stem_palavra', $tokens);
-}
-
-function stem_palavra($palavra) {
-    $sufixos = ['ções', 'sões', 'mente', 'dade', 'rão', 'ção', 'são', 'ndo', 'nte', 'ar', 'er', 'ir', 'es', 'as', 'os', 'is', 'am', 'ou', 'ei', 'ia', 'al', 'el', 'il'];
-    foreach ($sufixos as $sufixo) {
-        if (str_ends_with($palavra, $sufixo)) {
-            return substr($palavra, 0, -strlen($sufixo));
-        }
-    }
-    return $palavra;
-}
-
-function buscar_trecho_relacionado($pergunta, $documentos, $limite_similaridade = 0.75) {
-    $tokens_pergunta = limpar_texto($pergunta);
-    $pontuacoes = [];
-
-    foreach ($documentos as $doc) {
-        $tokens_doc = limpar_texto($doc);
-        $matchCount = 0;
-
-        foreach ($tokens_pergunta as $token_p) {
-            foreach ($tokens_doc as $token_d) {
-                $dist = levenshtein($token_p, $token_d);
-                $maxLen = max(strlen($token_p), strlen($token_d));
-                $sim = ($maxLen > 0) ? 1 - ($dist / $maxLen) : 0;
-
-                if ($sim > 0.8) {
-                    $matchCount++;
-                    break;
-                }
+    function stem_palavra($palavra) {
+        $sufixos = ['ções', 'sões', 'mente', 'dade', 'rão', 'ção', 'são', 'ndo', 'nte', 'ar', 'er', 'ir', 'es', 'as', 'os', 'is', 'am', 'ou', 'ei', 'ia', 'al', 'el', 'il'];
+        foreach ($sufixos as $sufixo) {
+            if (str_ends_with($palavra, $sufixo)) {
+                return substr($palavra, 0, -strlen($sufixo));
             }
         }
-
-        $similaridade = $matchCount / count($tokens_pergunta);
-        $pontuacoes[] = ['texto' => $doc, 'score' => $similaridade];
+        return $palavra;
     }
 
-    usort($pontuacoes, fn($a, $b) => $b['score'] <=> $a['score']);
-    $melhor = $pontuacoes[0] ?? null;
+    function buscar_trecho_relacionado($pergunta, $documentos, $limite_similaridade = 0.75) {
+        $tokens_pergunta = limpar_texto($pergunta);
+        $pontuacoes = [];
 
-    return ($melhor && $melhor['score'] >= $limite_similaridade) ? $melhor['texto'] : null;
-}
-function buscar_prova_no_json($pergunta, $json, $limite_similaridade = 0.75) {
-    $tokens_pergunta = limpar_texto($pergunta);
-    $pontuacoes = [];
+        foreach ($documentos as $doc) {
+            $tokens_doc = limpar_texto($doc);
+            $matchCount = 0;
 
-    foreach ($json['provas'] as $prova) {
-        $bloco = $prova['prova'] . ' ' . $prova['descricao'] . ' ' . $prova['categoria'] . ' ' . $prova['data'];
-        $tokens_bloco = limpar_texto($bloco);
+            foreach ($tokens_pergunta as $token_p) {
+                foreach ($tokens_doc as $token_d) {
+                    $dist = levenshtein($token_p, $token_d);
+                    $maxLen = max(strlen($token_p), strlen($token_d));
+                    $sim = ($maxLen > 0) ? 1 - ($dist / $maxLen) : 0;
 
-        $matchCount = 0;
-
-        foreach ($tokens_pergunta as $token_p) {
-            foreach ($tokens_bloco as $token_d) {
-                $dist = levenshtein($token_p, $token_d);
-                $maxLen = max(strlen($token_p), strlen($token_d));
-                $sim = ($maxLen > 0) ? 1 - ($dist / $maxLen) : 0;
-
-                if ($sim > 0.8) {
-                    $matchCount++;
-                    break;
+                    if ($sim > 0.8) {
+                        $matchCount++;
+                        break;
+                    }
                 }
             }
+
+            $similaridade = $matchCount / count($tokens_pergunta);
+            $pontuacoes[] = ['texto' => $doc, 'score' => $similaridade];
         }
 
-        $similaridade = $matchCount / count($tokens_pergunta);
-        $pontuacoes[] = ['prova' => $prova, 'score' => $similaridade];
+        usort($pontuacoes, fn($a, $b) => $b['score'] <=> $a['score']);
+        $melhor = $pontuacoes[0] ?? null;
+
+        return ($melhor && $melhor['score'] >= $limite_similaridade) ? $melhor['texto'] : null;
     }
+    function buscar_prova_no_json($pergunta, $json, $limite_similaridade = 0.75) {
+        $tokens_pergunta = limpar_texto($pergunta);
+        $pontuacoes = [];
 
-    usort($pontuacoes, fn($a, $b) => $b['score'] <=> $a['score']);
-    $melhor = $pontuacoes[0] ?? null;
+        foreach ($json['provas'] as $prova) {
+            $bloco = $prova['prova'] . ' ' . $prova['descricao'] . ' ' . $prova['categoria'] . ' ' . $prova['data'];
+            $tokens_bloco = limpar_texto($bloco);
 
-    if ($melhor && $melhor['score'] >= $limite_similaridade) {
-        $prova = $melhor['prova'];
-        $resumo = "Resultado da {$prova['prova']} - {$prova['descricao']} (Categoria: {$prova['categoria']}, Data: {$prova['data']}):\n";
-        foreach ($prova['resultados'] as $res) {
-            $resumo .= "- {$res['colocacao']}: {$res['atleta']} ({$res['tempo']})\n";
+            $matchCount = 0;
+
+            foreach ($tokens_pergunta as $token_p) {
+                foreach ($tokens_bloco as $token_d) {
+                    $dist = levenshtein($token_p, $token_d);
+                    $maxLen = max(strlen($token_p), strlen($token_d));
+                    $sim = ($maxLen > 0) ? 1 - ($dist / $maxLen) : 0;
+
+                    if ($sim > 0.8) {
+                        $matchCount++;
+                        break;
+                    }
+                }
+            }
+
+            $similaridade = $matchCount / count($tokens_pergunta);
+            $pontuacoes[] = ['prova' => $prova, 'score' => $similaridade];
         }
-        return $resumo;
-    }
 
-    return null;
-}
+        usort($pontuacoes, fn($a, $b) => $b['score'] <=> $a['score']);
+        $melhor = $pontuacoes[0] ?? null;
+
+        if ($melhor && $melhor['score'] >= $limite_similaridade) {
+            $prova = $melhor['prova'];
+            $resumo = "Resultado da {$prova['prova']} - {$prova['descricao']} (Categoria: {$prova['categoria']}, Data: {$prova['data']}):\n";
+            foreach ($prova['resultados'] as $res) {
+                $resumo .= "- {$res['colocacao']}: {$res['atleta']} ({$res['tempo']})\n";
+            }
+            return $resumo;
+        }
+
+        return null;
+    }

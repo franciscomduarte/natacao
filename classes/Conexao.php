@@ -1,6 +1,5 @@
 <?php
 
- include_once(__DIR__ ."/../utils.php");
  class Conexao {
      private $host;
      private $dbname;

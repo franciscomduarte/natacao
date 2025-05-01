@@ -1,4 +1,4 @@
-<?php require_once 'config.php';?>
+<?php include_once 'config.php';?>
 
 <head>
     <meta charset="utf-8" />
@@ -12,7 +12,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="<?php $_SERVER['DOCUMENT_ROOT'] . "/natacao"?>/assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

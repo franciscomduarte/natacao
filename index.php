@@ -8,7 +8,7 @@
   data-template="vertical-menu-template-free"
 >
   <?php 
-    include('head.php'); 
+    include_once('head.php'); 
     
     $db = new Conexao();
     $pdo = $db->conectar();

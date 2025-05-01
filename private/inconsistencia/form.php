@@ -1,6 +1,6 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sessao.php");
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sessao.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 
 $db = new Conexao();
 $pdo = $db->conectar();
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sidebar.php"); ?>
             <div class="layout-page">
                 <div class="content-wrapper">
                     <div class="container-xxl flex-grow-1 container-p-y">
@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <?php endforeach; ?>
 
                             <button type="submit" class="btn btn-primary">Salvar</button>
-                            <a href="/natacao/private/resultado" class="btn btn-secondary">Voltar</a>
+                            <a href="<?php BASE_URL ?>/private/resultado" class="btn btn-secondary">Voltar</a>
                         </form>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/natacao/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/footer.php"; ?>
 
     <!-- Script de busca do atleta -->
     <script>
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             const registro = $(this).val().trim();
             if (registro.length === 0) return;
 
-            $.get("/natacao/private/inconsistencia/buscar_atleta.php", { registro: registro }, function (data) {
+            $.get(<?php BASE_URL ?>"/private/inconsistencia/buscar_atleta.php", { registro: registro }, function (data) {
                 console.log("Resposta recebida:", data);
                 if (data && data.id) {
                     $("#atleta_id").val(data.id);

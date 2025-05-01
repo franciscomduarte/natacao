@@ -8,7 +8,8 @@
   data-template="vertical-menu-template-free"
 >
   <?php 
-    include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php"); 
+    include_once("../config.php");
+    include($_SERVER['DOCUMENT_ROOT'] . BASE_URL .  "/head.php"); 
     
     $db = new Conexao();
     $pdo = $db->conectar();
@@ -85,7 +86,7 @@
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
         
-        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sidebar.php"); ?>
 
         <!-- Layout container -->
         <div class="layout-page">
@@ -248,7 +249,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/natacao/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/footer.php"; ?>
 
   </body>
 </html>

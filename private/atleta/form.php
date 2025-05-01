@@ -1,6 +1,6 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sessao.php");
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sessao.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 $db = new Conexao();
 $pdo = $db->conectar();
 
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sidebar.php"); ?>
             <div class="layout-page">
                 <div class="content-wrapper">
                     <div class="container-xxl flex-grow-1 container-p-y">
@@ -56,12 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <input type="number" name="nascimento" class="form-control" min="1900" max="<?= date('Y') ?>" required value="<?= htmlspecialchars($nascimento) ?>">
                             </div>
                             <button type="submit" class="btn btn-primary">Salvar</button>
-                            <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/natacao/private/atleta" class="btn btn-secondary">Voltar</a>
+                            <a href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/private/atleta" class="btn btn-secondary">Voltar</a>
                         </form>
                         </div>
                 </div>
             </div>
         </div>
     </div>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/natacao/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/footer.php"; ?>
 </body>

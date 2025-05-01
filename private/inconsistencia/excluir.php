@@ -1,6 +1,6 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sessao.php");
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sessao.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 
 $db = new Conexao();
 $pdo = $db->conectar();

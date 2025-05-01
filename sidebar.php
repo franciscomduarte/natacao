@@ -71,7 +71,7 @@
     <ul class="menu-inner py-1">
     <!-- Dashboard -->
     <li class="menu-item active">
-        <a href="index.php" class="menu-link">
+        <a href="<?= BASE_URL ?>/index.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Analytics">Dashboard</div>
         </a>
@@ -105,7 +105,7 @@
     <li class="menu-item">
         <a href="<?= BASE_URL ?>/publico/bolsa-atleta.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
-        <div data-i18n="Basic">Documentação Bolsa Atleta</div>
+        <div data-i18n="Basic">Bolsa Atleta</div>
         </a>
     </li>
 

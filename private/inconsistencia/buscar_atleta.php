@@ -1,6 +1,6 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sessao.php");
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sessao.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 
 $registro = $_GET['registro'] ?? '';
 $pdo = (new Conexao())->conectar();

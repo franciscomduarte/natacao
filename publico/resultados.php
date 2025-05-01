@@ -1,5 +1,6 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . "/natacao/head.php");
+include_once("../config.php");
+include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 
 $db = new Conexao();
 $pdo = $db->conectar();
@@ -43,7 +44,7 @@ if (!empty($_GET)) {
 <body>
   <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
-      <?php include($_SERVER['DOCUMENT_ROOT'] . "/natacao/sidebar.php"); ?>
+      <?php include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sidebar.php"); ?>
       <div class="layout-page">
         <div class="content-wrapper">
           <div class="container-xxl flex-grow-1 container-p-y">
@@ -138,7 +139,7 @@ if (!empty($_GET)) {
       </div>
     </div>
   </div>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . "/natacao/footer.php"; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/footer.php"; ?>
 </body>
 
 </html>
