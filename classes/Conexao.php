@@ -10,10 +10,15 @@
      public function __construct() {
         Conexao::carregar_env('/.env');
 
-        $host = $_ENV['DB_HOST'];
-        $dbname = $_ENV['DB_NAME'];
-        $user = $_ENV['DB_USER'];
-        $pass = $_ENV['DB_PASS'];
+        #$host = $_ENV['DB_HOST'];
+        #$dbname = $_ENV['DB_NAME'];
+        #$user = $_ENV['DB_USER'];
+        #$pass = $_ENV['DB_PASS'];
+
+        $host="mysql.l3swim.com.br";
+        $dbname="l3swim";
+        $user="l3swim";
+        $pass="natacao09";
 
         $this->host = $host;
         $this->username = $user;
