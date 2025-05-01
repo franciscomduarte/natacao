@@ -8,7 +8,7 @@
      private $conn;
  
      public function __construct() {
-        Conexao::carregar_env(__DIR__ . '../.env');
+        Conexao::carregar_env('/.env');
 
         $host = $_ENV['DB_HOST'];
         $dbname = $_ENV['DB_NAME'];
