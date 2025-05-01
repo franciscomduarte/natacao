@@ -1,6 +1,5 @@
 <?php
 
- include_once 'utils.php';
  class Conexao {
      private $host;
      private $dbname;
@@ -9,7 +8,7 @@
      private $conn;
  
      public function __construct() {
-        Conexao::carregar_env(BASE_URL . '/.env');
+        Conexao::carregar_env(__DIR__ . '../.env');
 
         $host = $_ENV['DB_HOST'];
         $dbname = $_ENV['DB_NAME'];
