@@ -1,4 +1,5 @@
 <?php
+include_once("../../config.php");
 include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sessao.php");
 include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 

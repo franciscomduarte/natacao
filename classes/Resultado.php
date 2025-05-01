@@ -128,16 +128,13 @@
             JOIN prova p ON r.prova_id = p.id
             JOIN campeonato c ON p.campeonato_id = c.id
             WHERE 1 = 1
-            AND c.id = 1
-            
-            -- AND c.ano = ?
+            AND c.chave IN (" . implode(',', array_fill(0, count($chavesValidas), '?')) . ")
+            AND c.ano = ?
             AND r.colocacao BETWEEN 1 AND 5
         ";
-        #AND c.chave IN (" . implode(',', array_fill(0, count($chavesValidas), '?')) . ")
-        #$params = array_merge($chavesValidas, [$ano]);
+        $params = array_merge($chavesValidas, [$ano]);
         $stmt = $this->conn->prepare($sql);
-        #$stmt->execute($params);
-        $stmt->execute();
+        $stmt->execute($params);
         $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
         $pontuacoes = [];

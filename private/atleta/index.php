@@ -49,8 +49,8 @@ $atletas = $atletaObj->listar();
                                         <td><?= htmlspecialchars($a['nome']) ?></td>
                                         <td><?= htmlspecialchars($a['nascimento']) ?></td>
                                         <td>
-                                            <a href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/private/atleta/form.php?id=<?= $a['id'] ?>" class="btn btn-sm btn-primary">Editar</a>
-                                            <a href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/private/atleta/excluir.php?id=<?= $a['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza?')">Excluir</a>
+                                            <a href="<?php echo BASE_URL ?>/private/atleta/form.php?id=<?= $a['id'] ?>" class="btn btn-sm btn-primary">Editar</a>
+                                            <a href="<?php echo BASE_URL ?>/private/atleta/excluir.php?id=<?= $a['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza?')">Excluir</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
