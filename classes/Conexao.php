@@ -1,5 +1,6 @@
 <?php
 
+ include_once 'config.php';
  class Conexao {
      private $host;
      private $dbname;
