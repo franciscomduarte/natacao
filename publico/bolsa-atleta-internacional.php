@@ -7,7 +7,7 @@ $pdo = $db->conectar();
 $obj = new Resultado($pdo);
 
 $ano = $_GET['ano'] ?? date('Y');
-$dados = $obj->calcularBolsaAtletaEstudantil($ano);
+$dados = $obj->calcularBolsaAtletaInternacional($ano);
 ?>
 <style>
     .container-resultados {
@@ -29,7 +29,7 @@ $dados = $obj->calcularBolsaAtletaEstudantil($ano);
         <div class="layout-page">
             <div class="content-wrapper">
                 <div class="container-xxl flex-grow-1 container-p-y">
-                    <h4 class="fw-bold py-3 mb-4">Ranking Bolsa Atleta Estudantil - <?= $ano ?></h4>
+                    <h4 class="fw-bold py-3 mb-4">Ranking Bolsa Atleta Internacional - <?= $ano ?></h4><h6 style="color: red">(obs: Caso encontre alguma incosistência, <a mailto="francisco.m.duarte@gmail.com">avise-nos</a>)</h6>
 
                     <form method="GET" class="mb-4">
                         <label>Selecione o ano:</label>

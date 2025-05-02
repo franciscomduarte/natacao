@@ -130,6 +130,8 @@
             WHERE 1 = 1
             AND c.chave IN (" . implode(',', array_fill(0, count($chavesValidas), '?')) . ")
             AND c.ano = ?
+            AND a.situacao = 'FEDERADO'
+            AND a.nascimento >= YEAR(CURDATE()) - 16
             AND r.colocacao BETWEEN 1 AND 5
         ";
         $params = array_merge($chavesValidas, [$ano]);
@@ -152,10 +154,25 @@
             }
     
             // Adiciona a pontuação com descrição da prova
-            $pontuacoes[$id]['pontos'][] = [
-                'pontos' => $pontos,
-                'prova' => Resultado::resumirProva($row['prova_descricao']) . " (" . $row['colocacao'] . ")"
-            ];
+            $descricao = Resultado::resumirProva($row['prova_descricao']) . " (" . $row['colocacao'] . ")";
+
+            // Verifica se já existe no array
+            $jaExiste = false;
+            if (isset($pontuacoes[$id]['pontos'])) {
+                foreach ($pontuacoes[$id]['pontos'] as $p) {
+                    if ($p['prova'] === $descricao) {
+                        $jaExiste = true;
+                        break;
+                    }
+                }
+            }
+            
+            if (!$jaExiste) {
+                $pontuacoes[$id]['pontos'][] = [
+                    'pontos' => $pontos,
+                    'prova' => $descricao
+                ];
+            }
         }
     
         // Seleciona os 4 melhores resultados com descrição
@@ -180,6 +197,215 @@
         usort($resultadoFinal, fn($a, $b) => $b['pontos'] <=> $a['pontos']);
         return $resultadoFinal;
     }    
+
+
+
+    function calcularBolsaAtletaEstadual($ano): array {
+        $pontuacao = [
+            1 => 10,
+            2 => 8,
+            3 => 6,
+            4 => 4,
+            5 => 2
+        ];
+    
+        // Campeonatos válidos para estudantil
+        $chavesValidas = [
+            'centro-oeste-1-sem',
+            'centro-oeste-2-sem',
+            'brasiliense-verao',
+            'brasiliense-inverno',
+            'brasileiro-verao',
+            'brasileiro-inverno',
+            'trofeu-brasil'
+        ];
+    
+        // Consulta resultados válidos
+        $sql = "
+            SELECT 
+                r.atleta_id,
+                a.nome,
+                a.registro,
+                a.nascimento,
+                r.colocacao,
+                p.descricao AS prova_descricao,
+                c.ano
+            FROM resultado r
+            JOIN atleta a ON r.atleta_id = a.id
+            JOIN prova p ON r.prova_id = p.id
+            JOIN campeonato c ON p.campeonato_id = c.id
+            WHERE 1 = 1
+            AND c.chave IN (" . implode(',', array_fill(0, count($chavesValidas), '?')) . ")
+            AND c.ano = ?
+            AND a.situacao = 'FEDERADO'
+            AND a.nascimento <= YEAR(CURDATE()) - 14
+            AND r.colocacao BETWEEN 1 AND 5
+        ";
+        $params = array_merge($chavesValidas, [$ano]);
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute($params);
+        $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+        $pontuacoes = [];
+        foreach ($resultados as $row) {
+            $id = $row['atleta_id'];
+            $pontos = $pontuacao[(int)$row['colocacao']] ?? 0;
+    
+            if (!isset($pontuacoes[$id])) {
+                $pontuacoes[$id] = [
+                    'nome' => $row['nome'],
+                    'registro' => $row['registro'],
+                    'nascimento' => $row['nascimento'],
+                    'pontos' => []
+                ];
+            }
+    
+            // Adiciona a pontuação com descrição da prova
+            $descricao = Resultado::resumirProva($row['prova_descricao']) . " (" . $row['colocacao'] . ")";
+
+            // Verifica se já existe no array
+            $jaExiste = false;
+            if (isset($pontuacoes[$id]['pontos'])) {
+                foreach ($pontuacoes[$id]['pontos'] as $p) {
+                    if ($p['prova'] === $descricao) {
+                        $jaExiste = true;
+                        break;
+                    }
+                }
+            }
+            
+            if (!$jaExiste) {
+                $pontuacoes[$id]['pontos'][] = [
+                    'pontos' => $pontos,
+                    'prova' => $descricao
+                ];
+            }
+        }
+    
+        // Seleciona os 4 melhores resultados com descrição
+        $resultadoFinal = [];
+        foreach ($pontuacoes as $id => $dados) {
+            usort($dados['pontos'], fn($a, $b) => $b['pontos'] <=> $a['pontos']);
+            $melhores = array_slice($dados['pontos'], 0, 4);
+            $total = array_sum(array_column($melhores, 'pontos'));
+            $provas = array_column($melhores, 'prova');
+    
+            $resultadoFinal[] = [
+                'atleta_id' => $id,
+                'nome' => $dados['nome'],
+                'registro' => $dados['registro'],
+                'nascimento' => $dados['nascimento'],
+                'pontos' => $total,
+                'provas' => $provas
+            ];
+        }
+    
+        // Ordena por maior pontuação
+        usort($resultadoFinal, fn($a, $b) => $b['pontos'] <=> $a['pontos']);
+        return $resultadoFinal;
+    } 
+
+    function calcularBolsaAtletaNacional($ano): array {
+        $pontuacao = [
+            1 => 10,
+            2 => 8,
+            3 => 6,
+            4 => 4,
+            5 => 2
+        ];
+    
+        // Campeonatos válidos para estudantil
+        $chavesValidas = [
+            'brasileiro-verao',
+            'brasileiro-inverno',
+            'trofeu-brasil',
+            'jose-finkel'
+        ];
+    
+        // Consulta resultados válidos
+        $sql = "
+            SELECT 
+                r.atleta_id,
+                a.nome,
+                a.registro,
+                a.nascimento,
+                r.colocacao,
+                p.descricao AS prova_descricao,
+                c.ano
+            FROM resultado r
+            JOIN atleta a ON r.atleta_id = a.id
+            JOIN prova p ON r.prova_id = p.id
+            JOIN campeonato c ON p.campeonato_id = c.id
+            WHERE 1 = 1
+            AND (c.chave IN (" . implode(',', array_fill(0, count($chavesValidas), '?')) . ") or 1 = 1)
+            AND c.ano = ?
+            AND a.situacao = 'FEDERADO'
+            AND a.nascimento <= YEAR(CURDATE()) - 14
+            AND r.colocacao BETWEEN 1 AND 5
+        ";
+        $params = array_merge($chavesValidas, [$ano]);
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute($params);
+        $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+        $pontuacoes = [];
+        foreach ($resultados as $row) {
+            $id = $row['atleta_id'];
+            $pontos = $pontuacao[(int)$row['colocacao']] ?? 0;
+    
+            if (!isset($pontuacoes[$id])) {
+                $pontuacoes[$id] = [
+                    'nome' => $row['nome'],
+                    'registro' => $row['registro'],
+                    'nascimento' => $row['nascimento'],
+                    'pontos' => []
+                ];
+            }
+    
+            // Adiciona a pontuação com descrição da prova
+            $descricao = Resultado::resumirProva($row['prova_descricao']) . " (" . $row['colocacao'] . ")";
+
+            // Verifica se já existe no array
+            $jaExiste = false;
+            if (isset($pontuacoes[$id]['pontos'])) {
+                foreach ($pontuacoes[$id]['pontos'] as $p) {
+                    if ($p['prova'] === $descricao) {
+                        $jaExiste = true;
+                        break;
+                    }
+                }
+            }
+            
+            if (!$jaExiste) {
+                $pontuacoes[$id]['pontos'][] = [
+                    'pontos' => $pontos,
+                    'prova' => $descricao
+                ];
+            }
+        }
+    
+        // Seleciona os 4 melhores resultados com descrição
+        $resultadoFinal = [];
+        foreach ($pontuacoes as $id => $dados) {
+            usort($dados['pontos'], fn($a, $b) => $b['pontos'] <=> $a['pontos']);
+            $melhores = array_slice($dados['pontos'], 0, 4);
+            $total = array_sum(array_column($melhores, 'pontos'));
+            $provas = array_column($melhores, 'prova');
+    
+            $resultadoFinal[] = [
+                'atleta_id' => $id,
+                'nome' => $dados['nome'],
+                'registro' => $dados['registro'],
+                'nascimento' => $dados['nascimento'],
+                'pontos' => $total,
+                'provas' => $provas
+            ];
+        }
+    
+        // Ordena por maior pontuação
+        usort($resultadoFinal, fn($a, $b) => $b['pontos'] <=> $a['pontos']);
+        return $resultadoFinal;
+    } 
 
     static function  resumirProva($descricaoCompleta) {
         if (preg_match('/(\d+)\s+METROS\s+([A-ZÇ]+)/i', $descricaoCompleta, $matches)) {

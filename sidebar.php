@@ -103,11 +103,35 @@
     </li>
 
     <li class="menu-item">
-        <a href="<?= BASE_URL ?>/publico/bolsa-atleta.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-collection"></i>
-        <div data-i18n="Basic">Bolsa Atleta</div>
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-layout"></i>
+        <div data-i18n="Layouts">Bolsa Atleta</div>
         </a>
+
+        <ul class="menu-sub">
+        <li class="menu-item">
+            <a href="<?= BASE_URL ?>/publico/bolsa-atleta-estudantil.php" class="menu-link">
+            <div data-i18n="Without menu">Estudantil</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="<?= BASE_URL ?>/publico/bolsa-atleta-estadual.php" class="menu-link">
+            <div data-i18n="Without navbar">Estadual</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="<?= BASE_URL ?>/publico/bolsa-atleta-nacional.php" class="menu-link">
+            <div data-i18n="Container">Nacional</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+            <div data-i18n="Fluid">Internacional</div>
+            </a>
+        </li>
+        </ul>
     </li>
+
 
     <li class="menu-item">
         <a href="<?= BASE_URL ?>/publico/campeonatos.php" class="menu-link">
