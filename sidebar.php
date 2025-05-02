@@ -150,6 +150,13 @@
     </li>
 
     <li class="menu-item">
+        <a href="<?= BASE_URL ?>/private/campeonato" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-collection"></i> 
+        <div data-i18n="Basic">Gestão de Campeonatos</div>
+        </a>
+    </li>
+
+    <li class="menu-item">
         <a href="<?= BASE_URL ?>/private/inconsistencia" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i> 
         <div data-i18n="Basic">Inconsistências</div>

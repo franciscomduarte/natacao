@@ -76,7 +76,7 @@ $dados = $obj->calcularBolsaAtletaNacional($ano);
                                 <td>-</td>
                                 <td>-</td>
                                 <td>-</td>
-                                <td><strong><?= number_format($atleta['pontos'], 2) ?></strong></td>
+                                <td>-</td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
