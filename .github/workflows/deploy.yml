@@ -1,0 +1,25 @@
+name: Deploy para KingHost
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar chave SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.KINGHOST_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H l3swim.com.br >> ~/.ssh/known_hosts
+
+      - name: Deploy no KingHost via SSH
+        run: |
+          ssh l3swim@l3swim.com.br "cd /www && git pull"
