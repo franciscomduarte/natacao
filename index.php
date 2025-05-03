@@ -230,7 +230,7 @@
                   ©
                   <script>
                     document.write(new Date().getFullYear());
-                  </script>, made by <a mailto="francisco.m.duarte@gmail.com"><b>Francisco Molina.</b></a>
+                  </script>, made by <a mailto="francisco.m.duarte@gmail.com"><b>Francisco Molina</b></a>
                 </div>
               </div>
             </footer>
