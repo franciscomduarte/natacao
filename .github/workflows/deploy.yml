@@ -15,7 +15,7 @@ jobs:
 
       - name: Configurar chave SSH
         run: |
-          mkdir -p ~/.ssh
+          # mkdir -p ~/.ssh
           echo "${{ secrets.KINGHOST_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H l3swim.com.br >> ~/.ssh/known_hosts
