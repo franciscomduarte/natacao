@@ -1,0 +1,11 @@
+PyPDF2
+openai
+python-dotenv
+psycopg2 
+faiss-cpu 
+sentence-transformers
+requests
+streamlit
+mysql-connector-python
+excel_writer
+docling

@@ -1,0 +1,3993 @@
+{
+  "campeonato": [
+    "TORNEIO DE ABERTURA FDADF",
+    "TORNEIO DE ABERTURA",
+    "DEFER/DF",
+    "PISCINA 50 M",
+    "22/02/2025 à 22/02/2025"
+  ],
+  "provas": [
+    {
+      "prova": "1ª PROVA",
+      "descricao": "200 METROS LIVRE FEMININO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "9º",
+          "serie": "3",
+          "raia": "7",
+          "atleta": "LETICIA PEREIRA",
+          "registro": "375803",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:37 37",
+          "pontos": "0,00",
+          "indice": "370"
+        },
+        {
+          "colocacao": "14º",
+          "serie": "3",
+          "raia": "1",
+          "atleta": "ANA CLARA GENTIL",
+          "registro": "386591",
+          "nascimento": "2013",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:45 36",
+          "pontos": "0,00",
+          "indice": "318"
+        },
+        {
+          "colocacao": "15º",
+          "serie": "3",
+          "raia": "3",
+          "atleta": "MAYA BOEING",
+          "registro": "379952",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:45 43",
+          "pontos": "0,00",
+          "indice": "318"
+        },
+        {
+          "colocacao": "17º",
+          "serie": "3",
+          "raia": "6",
+          "atleta": "MARIANA QUEIROGA",
+          "registro": "370025",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:47 07",
+          "pontos": "0,00",
+          "indice": "309"
+        },
+        {
+          "linha_bruta": "20º 2 7 JULIA DOS FERNANDES V4212842013 MBTC 02:49 91 0,00 294"
+        },
+        {
+          "colocacao": "24º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "LAURA SIMOES VERSIANI",
+          "registro": "392155",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:57 25",
+          "pontos": "0,00",
+          "indice": "258"
+        },
+        {
+          "colocacao": "30º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "MARIANA VASCONCELOS TEIXEIRA",
+          "registro": "396870",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:12 61",
+          "pontos": "0,00",
+          "indice": "201"
+        },
+        {
+          "colocacao": "31º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "JULIA NASCIMENTO OLIVEIRA",
+          "registro": "408894",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:24 89",
+          "pontos": "0,00",
+          "indice": "167"
+        },
+        {
+          "colocacao": "32º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "CECILIA OLIVEIRA RIBEIRO",
+          "registro": "392336",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "03:32 37",
+          "pontos": "0,00",
+          "indice": "150"
+        },
+        {
+          "colocacao": "33º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "RENATA MEDEIROS SILVA",
+          "registro": "408793",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:40 99",
+          "pontos": "0,00",
+          "indice": "133"
+        }
+      ]
+    },
+    {
+      "prova": "1ª PROVA",
+      "descricao": "200 METROS LIVRE FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "2º",
+          "serie": "5",
+          "raia": "2",
+          "atleta": "NALU JACARANDÁ GALLINDO",
+          "registro": "352904",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:24 43",
+          "pontos": "0,00",
+          "indice": "478"
+        },
+        {
+          "linha_bruta": "5º 4 5 GABRIELA CAVALCA FIGUEIREDBOOLSA ATLETA/DF 386582 2012 ASBAC/AQUÁTICOS 02:28 15 0,00 443"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "5",
+          "raia": "7",
+          "atleta": "YASMIN BOEING",
+          "registro": "379951",
+          "nascimento": "2011",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:35 42",
+          "pontos": "0,00",
+          "indice": "384"
+        },
+        {
+          "colocacao": "8º",
+          "serie": "4",
+          "raia": "2",
+          "atleta": "ISABELA MENEZES MARQUES",
+          "registro": "417129",
+          "nascimento": "2011",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "02:35 59",
+          "pontos": "0,00",
+          "indice": "382"
+        },
+        {
+          "colocacao": "10º",
+          "serie": "4",
+          "raia": "1",
+          "atleta": "RAFAELLA RODRIGUES FERREIRHAUGO LOBO SWIM",
+          "registro": "377847",
+          "nascimento": "2011",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "02:39 31",
+          "pontos": "0,00",
+          "indice": "356"
+        },
+        {
+          "colocacao": "12º",
+          "serie": "4",
+          "raia": "3",
+          "atleta": "BRUNA MARTINS VIEIRA",
+          "registro": "394609",
+          "nascimento": "2012",
+          "entidade": "NATARE",
+          "tempo": "02:40 89",
+          "pontos": "0,00",
+          "indice": "346"
+        },
+        {
+          "colocacao": "16º",
+          "serie": "4",
+          "raia": "8",
+          "atleta": "LUZ GRACIELA CARVALHO",
+          "registro": "380006",
+          "nascimento": "2011",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:46 19",
+          "pontos": "0,00",
+          "indice": "314"
+        },
+        {
+          "colocacao": "18º",
+          "serie": "3",
+          "raia": "4",
+          "atleta": "HELENA ANGELICA FAMILIAR",
+          "registro": "396658",
+          "nascimento": "2011",
+          "entidade": "NATARE",
+          "tempo": "02:47 94",
+          "pontos": "0,00",
+          "indice": "304"
+        },
+        {
+          "colocacao": "21º",
+          "serie": "3",
+          "raia": "2",
+          "atleta": "LUISA KEIKO",
+          "registro": "370981",
+          "nascimento": "2012",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:52 12",
+          "pontos": "0,00",
+          "indice": "282"
+        },
+        {
+          "colocacao": "28º",
+          "serie": "3",
+          "raia": "8",
+          "atleta": "ESTHER JULIANA SILVA",
+          "registro": "V407465",
+          "nascimento": "2011",
+          "entidade": "ACADEMIA NO LIMITE",
+          "tempo": "03:01 87",
+          "pontos": "0,00",
+          "indice": "239"
+        }
+      ]
+    },
+    {
+      "prova": "1ª PROVA",
+      "descricao": "200 METROS LIVRE FEMININO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "5",
+          "raia": "5",
+          "atleta": "GABRIELA ALMEIDA",
+          "registro": "375917",
+          "nascimento": "2010",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:22 22",
+          "pontos": "0,00",
+          "indice": "501"
+        },
+        {
+          "colocacao": "3º",
+          "serie": "5",
+          "raia": "3",
+          "atleta": "JULIA MASSANEIRO",
+          "registro": "375916",
+          "nascimento": "2010",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:24 89",
+          "pontos": "0,00",
+          "indice": "474"
+        },
+        {
+          "colocacao": "11º",
+          "serie": "4",
+          "raia": "4",
+          "atleta": "YASMIN DE LOA",
+          "registro": "375811",
+          "nascimento": "2010",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:39 46",
+          "pontos": "0,00",
+          "indice": "355"
+        },
+        {
+          "colocacao": "23º",
+          "serie": "2",
+          "raia": "1",
+          "atleta": "GABRIELA MACHADO COLÉGIO MARISTA DE B",
+          "registro": "V380135",
+          "nascimento": "2010",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "02:57 08",
+          "pontos": "0,00",
+          "indice": "259"
+        },
+        {
+          "colocacao": "25º",
+          "serie": "3",
+          "raia": "5",
+          "atleta": "SOFIA FEITOSA",
+          "registro": "381746",
+          "nascimento": "2010",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:57 39",
+          "pontos": "0,00",
+          "indice": "258"
+        },
+        {
+          "colocacao": "26º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "NATASHA THAIS GUEDES LA SALLE ÁGUAS CLARA",
+          "registro": "378859",
+          "nascimento": "2009",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:01 25",
+          "pontos": "0,00",
+          "indice": "242"
+        },
+        {
+          "colocacao": "27º",
+          "serie": "2",
+          "raia": "8",
+          "atleta": "ANA CAROLINA RIBEIRO",
+          "registro": "V401548",
+          "nascimento": "2010",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "03:01 52",
+          "pontos": "0,00",
+          "indice": "241"
+        }
+      ]
+    },
+    {
+      "prova": "1ª PROVA",
+      "descricao": "200 METROS LIVRE FEMININO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "4º",
+          "serie": "5",
+          "raia": "6",
+          "atleta": "LUISA QUEIROGA",
+          "registro": "357667",
+          "nascimento": "2008",
+          "entidade": "MBTC",
+          "tempo": "02:26 74",
+          "pontos": "0,00",
+          "indice": "456"
+        },
+        {
+          "colocacao": "6º",
+          "serie": "5",
+          "raia": "1",
+          "atleta": "MARIA CLARA JACARANDA GALLINDO",
+          "registro": "345680",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:34 19",
+          "pontos": "0,00",
+          "indice": "393"
+        },
+        {
+          "colocacao": "13º",
+          "serie": "5",
+          "raia": "8",
+          "atleta": "JULIA RIOS FONTES",
+          "registro": "368133",
+          "nascimento": "2007",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:43 91",
+          "pontos": "0,00",
+          "indice": "327"
+        },
+        {
+          "colocacao": "19º",
+          "serie": "4",
+          "raia": "6",
+          "atleta": "ANALICE DE ANDRADE LIMA",
+          "registro": "343600",
+          "nascimento": "2008",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:49 11",
+          "pontos": "0,00",
+          "indice": "298"
+        },
+        {
+          "colocacao": "22º",
+          "serie": "4",
+          "raia": "7",
+          "atleta": "BEATRIZ ALVES NASCIMENTO",
+          "registro": "366608",
+          "nascimento": "2008",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:53 78",
+          "pontos": "0,00",
+          "indice": "274"
+        },
+        {
+          "linha_bruta": "29º 1 4 LUIZA FERREIRA V378858 2008 LASALLE AGUAS CLARA03S:11 73 0,00 204"
+        }
+      ]
+    },
+    {
+      "prova": "2ª PROVA",
+      "descricao": "200 METROS LIVRE MASCULINO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "26º",
+          "serie": "4",
+          "raia": "1",
+          "atleta": "RAFAEL SANTOS VIEIRA",
+          "registro": "394610",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:34 01",
+          "pontos": "0,00",
+          "indice": "290"
+        },
+        {
+          "colocacao": "27º",
+          "serie": "4",
+          "raia": "6",
+          "atleta": "PEDRO OLIVEIRA MARINHO",
+          "registro": "386581",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:34 05",
+          "pontos": "0,00",
+          "indice": "290"
+        },
+        {
+          "colocacao": "28º",
+          "serie": "4",
+          "raia": "7",
+          "atleta": "VINICIUS RICARDO SOUZA",
+          "registro": "394605",
+          "nascimento": "2013",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:34 18",
+          "pontos": "0,00",
+          "indice": "289"
+        },
+        {
+          "colocacao": "30º",
+          "serie": "4",
+          "raia": "8",
+          "atleta": "VITOR MANZOLILLO",
+          "registro": "385766",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:38 89",
+          "pontos": "0,00",
+          "indice": "264"
+        },
+        {
+          "colocacao": "32º",
+          "serie": "3",
+          "raia": "3",
+          "atleta": "FELIPE DE BRITO",
+          "registro": "388761",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:47 86",
+          "pontos": "0,00",
+          "indice": "224"
+        },
+        {
+          "linha_bruta": "35º 2 1 MURILO NIETSCHE BREVES V4212852013 MBTC 03:05 62 0,00 165"
+        },
+        {
+          "colocacao": "37º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "BENTO DOMINGUES BARROS",
+          "registro": "408913",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:06 62",
+          "pontos": "0,00",
+          "indice": "163"
+        },
+        {
+          "colocacao": "38º",
+          "serie": "3",
+          "raia": "8",
+          "atleta": "DANIEL RABELO LA SALLE ÁGUAS CLARA",
+          "registro": "378855",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "03:17 59",
+          "pontos": "0,00",
+          "indice": "137"
+        },
+        {
+          "colocacao": "40º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "NOAH CAVALHEIRO",
+          "registro": "379575",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:39 02",
+          "pontos": "0,00",
+          "indice": "101"
+        },
+        {
+          "linha_bruta": "41º 2 3 HEITOR COSCRATO BALSAMOLA SALLE ÁGUAS CLARA V3923652013 ASBAC/AQUÁTICOS 03:47 97 0,00 89"
+        }
+      ]
+    },
+    {
+      "prova": "2ª PROVA",
+      "descricao": "200 METROS LIVRE MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "20º",
+          "serie": "4",
+          "raia": "3",
+          "atleta": "ENZO GODOI CAVALCANTE LA SALLE ÁGUAS CLARA",
+          "registro": "378872",
+          "nascimento": "2012",
+          "entidade": "MBTC",
+          "tempo": "02:26 31",
+          "pontos": "0,00",
+          "indice": "338"
+        },
+        {
+          "colocacao": "21º",
+          "serie": "4",
+          "raia": "4",
+          "atleta": "MATHEUS RATUND OLIVEIRA 704 VEÍCULOS",
+          "registro": "375918",
+          "nascimento": "2012",
+          "entidade": "NATARE",
+          "tempo": "02:26 47",
+          "pontos": "0,00",
+          "indice": "337"
+        },
+        {
+          "colocacao": "22º",
+          "serie": "5",
+          "raia": "1",
+          "atleta": "PEDRO LUCAS BRITO DE OLIVEIRA",
+          "registro": "361435",
+          "nascimento": "2012",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:26 99",
+          "pontos": "0,00",
+          "indice": "334"
+        },
+        {
+          "colocacao": "24º",
+          "serie": "4",
+          "raia": "2",
+          "atleta": "YURI BARBOSA OLIVEIRA",
+          "registro": "394726",
+          "nascimento": "2012",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:31 53",
+          "pontos": "0,00",
+          "indice": "305"
+        },
+        {
+          "colocacao": "25º",
+          "serie": "3",
+          "raia": "5",
+          "atleta": "DANTE BERNADELLI",
+          "registro": "364748",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:33 79",
+          "pontos": "0,00",
+          "indice": "291"
+        },
+        {
+          "colocacao": "31º",
+          "serie": "3",
+          "raia": "4",
+          "atleta": "EDUARDO RABELO LA SALLE ÁGUAS CLARA",
+          "registro": "378856",
+          "nascimento": "2012",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:40 95",
+          "pontos": "0,00",
+          "indice": "254"
+        },
+        {
+          "colocacao": "33º",
+          "serie": "3",
+          "raia": "1",
+          "atleta": "AMIR COURBIS FARES",
+          "registro": "405635",
+          "nascimento": "2012",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:54 14",
+          "pontos": "0,00",
+          "indice": "200"
+        },
+        {
+          "linha_bruta": "34º 1 6 DANILO ALCANTARA SOUSA LA SALLE ÁGUAS CLARA V396718 2011 LASALLE AGUAS CLARA02S:56 87 0,00 191"
+        },
+        {
+          "linha_bruta": "36º 3 7 DAVI LINS LA SALLE ÁGUAS CLARA V378868 2011 LASALLE AGUAS CLARA03S:06 52 0,00 163"
+        },
+        {
+          "colocacao": "39º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "ISAAC RODRIGUES SOUSA",
+          "registro": "V418597",
+          "nascimento": "2012",
+          "entidade": "MBTC",
+          "tempo": "03:19 91",
+          "pontos": "0,00",
+          "indice": "132"
+        }
+      ]
+    },
+    {
+      "prova": "2ª PROVA",
+      "descricao": "200 METROS LIVRE MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "3º",
+          "serie": "6",
+          "raia": "5",
+          "atleta": "MATEUS OLIVEIRA COELHO",
+          "registro": "375292",
+          "nascimento": "2009",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:02 91",
+          "pontos": "0,00",
+          "indice": "571"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "GABRIEL LOPES LAMAS CRUZBOLSA ATLETA",
+          "registro": "360603",
+          "nascimento": "2010",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:07 06",
+          "pontos": "0,00",
+          "indice": "517"
+        },
+        {
+          "colocacao": "11º",
+          "serie": "6",
+          "raia": "8",
+          "atleta": "VITOR LIMA BRAGA DOS SANTBOOSLSA ATLETA",
+          "registro": "344300",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "02:12 69",
+          "pontos": "0,00",
+          "indice": "454"
+        },
+        {
+          "colocacao": "13º",
+          "serie": "5",
+          "raia": "8",
+          "atleta": "MATEUS RODRIGUES ESPINDOLA",
+          "registro": "392436",
+          "nascimento": "2009",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:15 06",
+          "pontos": "0,00",
+          "indice": "430"
+        },
+        {
+          "colocacao": "15º",
+          "serie": "2",
+          "raia": "7",
+          "atleta": "LUIS EDUARDO MIRANDA DE MORAES",
+          "registro": "380048",
+          "nascimento": "2009",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:16 76",
+          "pontos": "0,00",
+          "indice": "414"
+        },
+        {
+          "colocacao": "18º",
+          "serie": "5",
+          "raia": "7",
+          "atleta": "ERIK THOR RUBIN",
+          "registro": "384836",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "02:23 67",
+          "pontos": "0,00",
+          "indice": "357"
+        },
+        {
+          "colocacao": "19º",
+          "serie": "4",
+          "raia": "5",
+          "atleta": "PEDRO CESAR CASTRO",
+          "registro": "391362",
+          "nascimento": "2009",
+          "entidade": "NATARE",
+          "tempo": "02:24 21",
+          "pontos": "0,00",
+          "indice": "353"
+        },
+        {
+          "colocacao": "23º",
+          "serie": "2",
+          "raia": "8",
+          "atleta": "KENZO FRANCO LA SALLE ÁGUAS CLARA",
+          "registro": "378853",
+          "nascimento": "2009",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "02:31 50",
+          "pontos": "0,00",
+          "indice": "305"
+        },
+        {
+          "linha_bruta": "29º 1 7 GABRIEL WANGLER FARAGE LA SALLE ÁGUAS CLARA V408804 2010 LASALLE AGUAS CLARA02S:35 69 0,00 281"
+        }
+      ]
+    },
+    {
+      "prova": "2ª PROVA",
+      "descricao": "200 METROS LIVRE MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "2º",
+          "serie": "6",
+          "raia": "4",
+          "atleta": "JOAO VICTOR DE FARIAS RIBEIRO",
+          "registro": "342992",
+          "nascimento": "2006",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:02 67",
+          "pontos": "0,00",
+          "indice": "574"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "6",
+          "raia": "1",
+          "atleta": "JOAO PEDRO RABELO",
+          "registro": "371696",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:07 70",
+          "pontos": "0,00",
+          "indice": "509"
+        },
+        {
+          "colocacao": "8º",
+          "serie": "5",
+          "raia": "4",
+          "atleta": "VINICIUS BRITO DE OLIVEIRA",
+          "registro": "328709",
+          "nascimento": "2007",
+          "entidade": "MBTC",
+          "tempo": "02:12 05",
+          "pontos": "0,00",
+          "indice": "460"
+        },
+        {
+          "colocacao": "12º",
+          "serie": "5",
+          "raia": "3",
+          "atleta": "AMIR VIEIRA BORGES",
+          "registro": "390495",
+          "nascimento": "2007",
+          "entidade": "MBTC",
+          "tempo": "02:13 87",
+          "pontos": "0,00",
+          "indice": "442"
+        },
+        {
+          "colocacao": "14º",
+          "serie": "5",
+          "raia": "6",
+          "atleta": "MARCOS RICARDO ANDRADE",
+          "registro": "369919",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:15 99",
+          "pontos": "0,00",
+          "indice": "421"
+        },
+        {
+          "colocacao": "17º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "DAVI SANTOS BRASIL",
+          "registro": "342883",
+          "nascimento": "2007",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:17 40",
+          "pontos": "0,00",
+          "indice": "409"
+        }
+      ]
+    },
+    {
+      "prova": "2ª PROVA",
+      "descricao": "200 METROS LIVRE MASCULINO",
+      "categoria": "SENIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 6 3 WITOR HUGO DA SILVA LIMA BOLSA ATLETA/DF 313518 2004 MBTC 02:01 21 0,00 595"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "6",
+          "raia": "2",
+          "atleta": "GABRIEL FERREIRA MATOS",
+          "registro": "369610",
+          "nascimento": "2003",
+          "entidade": "MBTC",
+          "tempo": "02:05 45",
+          "pontos": "0,00",
+          "indice": "537"
+        },
+        {
+          "colocacao": "6º",
+          "serie": "6",
+          "raia": "6",
+          "atleta": "GABRIEL BARBOSA PEREIRA",
+          "registro": "343076",
+          "nascimento": "2005",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:07 63",
+          "pontos": "0,00",
+          "indice": "510"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "5",
+          "raia": "5",
+          "atleta": "MIKAEL DE REGETZ",
+          "registro": "343015",
+          "nascimento": "2004",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:12 49",
+          "pontos": "0,00",
+          "indice": "456"
+        },
+        {
+          "colocacao": "10º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "ALEXANDRE CÉSAR NÓBREGA",
+          "registro": "346508",
+          "nascimento": "2005",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:12 65",
+          "pontos": "0,00",
+          "indice": "454"
+        },
+        {
+          "colocacao": "16º",
+          "serie": "6",
+          "raia": "7",
+          "atleta": "FILIPE MARQUES",
+          "registro": "373495",
+          "nascimento": "2002",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:17 22",
+          "pontos": "0,00",
+          "indice": "410"
+        }
+      ]
+    },
+    {
+      "prova": "3ª PROVA",
+      "descricao": "100 METROS COSTAS FEMININO",
+      "categoria": "PRÉ-MIRIM",
+      "data": "22/02/2025",
+      "resultados": []
+    },
+    {
+      "prova": "3ª PROVA",
+      "descricao": "100 METROS COSTAS FEMININO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "JULIA SIMOES VERSIANI",
+          "registro": "392154",
+          "nascimento": "2015",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "01:41 84",
+          "pontos": "0,00",
+          "indice": "178"
+        },
+        {
+          "linha_bruta": "2º 1 5 ANGELA WOHLERS VIANA LA SALLE ÁGUAS CLARA V392241 2015 LASALLE AGUAS CLARA01S:52 67 0,00 131"
+        }
+      ]
+    },
+    {
+      "prova": "4ª PROVA",
+      "descricao": "100 METROS COSTAS MASCULINO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "DAVI OLIVEIRA COELHO",
+          "registro": "405366",
+          "nascimento": "2015",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "01:43 22",
+          "pontos": "0,00",
+          "indice": "124"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "BENJAMIN FORTES ALVARENGA",
+          "registro": "409105",
+          "nascimento": "2015",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "01:50 22",
+          "pontos": "0,00",
+          "indice": "102"
+        },
+        {
+          "colocacao": "3º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "DANIEL SEGALERBA MARANHAO",
+          "registro": "V397398",
+          "nascimento": "2015",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "01:53 12",
+          "pontos": "0,00",
+          "indice": "94"
+        },
+        {
+          "linha_bruta": "4º 1 2 ANDRE NOGUEIRA LEITAO LA SALLE ÁGUAS CLARA V392240 2016 LASALLE AGUAS CLARA01S:55 52 0,00 89"
+        },
+        {
+          "linha_bruta": "5º 1 6 PEDRO HENRIQUE LA SALLE ÁGUAS CLARA V378851 2015 LASALLE AGUAS CLARA02S:10 69 0,00 61"
+        }
+      ]
+    },
+    {
+      "prova": "5ª PROVA",
+      "descricao": "200 METROS BORBOLETA FEMININO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "2º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "FERNANDA CAVALCA",
+          "registro": "386583",
+          "nascimento": "2014",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:56 36",
+          "pontos": "0,00",
+          "indice": "136"
+        }
+      ]
+    },
+    {
+      "prova": "5ª PROVA",
+      "descricao": "200 METROS BORBOLETA FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "MAITE VELASQUEZ SHOJI",
+          "registro": "407271",
+          "nascimento": "2012",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:23 80",
+          "pontos": "0,00",
+          "indice": "213"
+        }
+      ]
+    },
+    {
+      "prova": "6ª PROVA",
+      "descricao": "200 METROS BORBOLETA MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "3º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "GABRIEL GONCALVES",
+          "registro": "380075",
+          "nascimento": "2011",
+          "entidade": "NATARE",
+          "tempo": "02:35 91",
+          "pontos": "0,00",
+          "indice": "354"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "ITALO BARRONCAS DE OLIVEIRBAOLSA ATLETA",
+          "registro": "349485",
+          "nascimento": "2011",
+          "entidade": "MBTC",
+          "tempo": "02:36 35",
+          "pontos": "0,00",
+          "indice": "351"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "GUILHERME SILVA DIAS",
+          "registro": "352975",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:43 11",
+          "pontos": "0,00",
+          "indice": "309"
+        },
+        {
+          "colocacao": "8º",
+          "serie": "2",
+          "raia": "7",
+          "atleta": "JACK ODIN RUBIN",
+          "registro": "384837",
+          "nascimento": "2012",
+          "entidade": "MBTC",
+          "tempo": "03:03 39",
+          "pontos": "0,00",
+          "indice": "217"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "MARCUS VINICIUS CARVALHO",
+          "registro": "406587",
+          "nascimento": "2011",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:09 71",
+          "pontos": "0,00",
+          "indice": "196"
+        }
+      ]
+    },
+    {
+      "prova": "6ª PROVA",
+      "descricao": "200 METROS BORBOLETA MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "6º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "LUCAS HENRIQUE MACKENZIE DF",
+          "registro": "343160",
+          "nascimento": "2010",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "02:52 28",
+          "pontos": "0,00",
+          "indice": "262"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "LUCAS FERREIRA",
+          "registro": "369528",
+          "nascimento": "2009",
+          "entidade": "NATARE",
+          "tempo": "03:02 39",
+          "pontos": "0,00",
+          "indice": "221"
+        }
+      ]
+    },
+    {
+      "prova": "6ª PROVA",
+      "descricao": "200 METROS BORBOLETA MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 3 KENUE TEIXEIRA SANTANA BOLSA ATLETA/DF 295735 2006 SESC OLIMPICO 02:25 53 0,00 435"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "PEDRO ETCHEVERRIA SOUZA",
+          "registro": "347085",
+          "nascimento": "2006",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:32 00",
+          "pontos": "0,00",
+          "indice": "382"
+        }
+      ]
+    },
+    {
+      "prova": "9ª PROVA",
+      "descricao": "50 METROS LIVRE FEMININO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "11º",
+          "serie": "1",
+          "raia": "8",
+          "atleta": "JULIA DOS FERNANDES",
+          "registro": "V421284",
+          "nascimento": "2013",
+          "entidade": "MBTC",
+          "tempo": "00:32 03",
+          "pontos": "0,00",
+          "indice": "400"
+        },
+        {
+          "colocacao": "12º",
+          "serie": "4",
+          "raia": "3",
+          "atleta": "LETICIA PEREIRA",
+          "registro": "375803",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:32 22",
+          "pontos": "0,00",
+          "indice": "393"
+        },
+        {
+          "colocacao": "13º",
+          "serie": "3",
+          "raia": "7",
+          "atleta": "MAYA BOEING",
+          "registro": "379952",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:32 71",
+          "pontos": "0,00",
+          "indice": "376"
+        },
+        {
+          "colocacao": "18º",
+          "serie": "3",
+          "raia": "6",
+          "atleta": "ANA CLARA GENTIL",
+          "registro": "386591",
+          "nascimento": "2013",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:33 90",
+          "pontos": "0,00",
+          "indice": "337"
+        },
+        {
+          "colocacao": "20º",
+          "serie": "3",
+          "raia": "2",
+          "atleta": "LAIS VOGEL",
+          "registro": "370057",
+          "nascimento": "2013",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:34 08",
+          "pontos": "0,00",
+          "indice": "332"
+        },
+        {
+          "colocacao": "26º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "GABRIELA DE BRITO HODUM",
+          "registro": "362618",
+          "nascimento": "2013",
+          "entidade": "MBTC",
+          "tempo": "00:36 03",
+          "pontos": "0,00",
+          "indice": "281"
+        },
+        {
+          "colocacao": "32º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "MARIANA VASCONCELOS TEIXEIRA",
+          "registro": "396870",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:40 08",
+          "pontos": "0,00",
+          "indice": "204"
+        },
+        {
+          "colocacao": "33º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "CECILIA OLIVEIRA RIBEIRO",
+          "registro": "392336",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:40 58",
+          "pontos": "0,00",
+          "indice": "196"
+        },
+        {
+          "linha_bruta": "34º 2 8 MANUELA ROCHA BANTIN V409296 2014 LASALLE AGUAS CLARA00S:40 62 0,00 196"
+        },
+        {
+          "linha_bruta": "36º 1 6 DANIELLE ALCANTARA SOUSALA SALLE ÁGUAS CLARA V396717 2014 LASALLE AGUAS CLARA00S:42 33 0,00 173"
+        },
+        {
+          "colocacao": "37º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "JULIA NASCIMENTO OLIVEIRA",
+          "registro": "408894",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:42 45",
+          "pontos": "0,00",
+          "indice": "172"
+        },
+        {
+          "colocacao": "38º",
+          "serie": "1",
+          "raia": "2",
+          "atleta": "RENATA MEDEIROS SILVA",
+          "registro": "408793",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:42 81",
+          "pontos": "0,00",
+          "indice": "167"
+        },
+        {
+          "colocacao": "39º",
+          "serie": "1",
+          "raia": "1",
+          "atleta": "MARIA EDUARDA SOUSA",
+          "registro": "421283",
+          "nascimento": "2014",
+          "entidade": "MBTC",
+          "tempo": "00:57 29",
+          "pontos": "0,00",
+          "indice": "69"
+        }
+      ]
+    },
+    {
+      "prova": "9ª PROVA",
+      "descricao": "50 METROS LIVRE FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "2º 5 3 GABRIELA CAVALCA FIGUEIREDBOOLSA ATLETA/DF 386582 2012 ASBAC/AQUÁTICOS 00:29 59 0,00 507"
+        },
+        {
+          "colocacao": "3º",
+          "serie": "5",
+          "raia": "2",
+          "atleta": "ISABELA MENEZES MARQUES",
+          "registro": "417129",
+          "nascimento": "2011",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:29 80",
+          "pontos": "0,00",
+          "indice": "497"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "5",
+          "raia": "8",
+          "atleta": "JULIA BITTAR",
+          "registro": "V384319",
+          "nascimento": "2012",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:31 74",
+          "pontos": "0,00",
+          "indice": "411"
+        },
+        {
+          "colocacao": "14º",
+          "serie": "3",
+          "raia": "5",
+          "atleta": "GABRIELA MORAES ASSIZ",
+          "registro": "V405715",
+          "nascimento": "2011",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:33 02",
+          "pontos": "0,00",
+          "indice": "365"
+        },
+        {
+          "colocacao": "15º",
+          "serie": "4",
+          "raia": "4",
+          "atleta": "LUZ GRACIELA CARVALHO",
+          "registro": "380006",
+          "nascimento": "2011",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:33 30",
+          "pontos": "0,00",
+          "indice": "356"
+        },
+        {
+          "colocacao": "16º",
+          "serie": "4",
+          "raia": "1",
+          "atleta": "RAFAELLA RODRIGUES FERREIRHAUGO LOBO SWIM",
+          "registro": "377847",
+          "nascimento": "2011",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "00:33 59",
+          "pontos": "0,00",
+          "indice": "347"
+        },
+        {
+          "colocacao": "23º",
+          "serie": "3",
+          "raia": "1",
+          "atleta": "ESTHER JULIANA SILVA",
+          "registro": "V407465",
+          "nascimento": "2011",
+          "entidade": "ACADEMIA NO LIMITE",
+          "tempo": "00:35 21",
+          "pontos": "0,00",
+          "indice": "301"
+        },
+        {
+          "colocacao": "25º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "LUISA KEIKO",
+          "registro": "370981",
+          "nascimento": "2012",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:35 77",
+          "pontos": "0,00",
+          "indice": "287"
+        },
+        {
+          "colocacao": "28º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "ISADORA MAZZOLENI TORRESCOLÉGIO MARISTA DE B",
+          "registro": "V380129",
+          "nascimento": "2011",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:36 41",
+          "pontos": "0,00",
+          "indice": "272"
+        },
+        {
+          "colocacao": "31º",
+          "serie": "2",
+          "raia": "7",
+          "atleta": "LARA ASSIS RECEPUTI",
+          "registro": "418682",
+          "nascimento": "2011",
+          "entidade": "MBTC",
+          "tempo": "00:37 84",
+          "pontos": "0,00",
+          "indice": "242"
+        }
+      ]
+    },
+    {
+      "prova": "9ª PROVA",
+      "descricao": "50 METROS LIVRE FEMININO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "5",
+          "raia": "4",
+          "atleta": "BEATRIZ DE BRITO HODUM BOLSA ATLETA",
+          "registro": "357800",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "00:29 13",
+          "pontos": "0,00",
+          "indice": "532"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "5",
+          "raia": "5",
+          "atleta": "YASMIN DE LOA",
+          "registro": "375811",
+          "nascimento": "2010",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:30 62",
+          "pontos": "0,00",
+          "indice": "458"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "5",
+          "raia": "7",
+          "atleta": "MARINA SEGALERBA COLÉGIO MARISTA DE B",
+          "registro": "V377218",
+          "nascimento": "2009",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:31 55",
+          "pontos": "0,00",
+          "indice": "419"
+        },
+        {
+          "colocacao": "8º",
+          "serie": "5",
+          "raia": "1",
+          "atleta": "NATASHA THAIS GUEDES LA SALLE ÁGUAS CLARA",
+          "registro": "378859",
+          "nascimento": "2009",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:31 70",
+          "pontos": "0,00",
+          "indice": "413"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "4",
+          "raia": "5",
+          "atleta": "YASMIN PEREIRA ARAUJO",
+          "registro": "358044",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "00:31 74",
+          "pontos": "0,00",
+          "indice": "411"
+        },
+        {
+          "colocacao": "17º",
+          "serie": "3",
+          "raia": "4",
+          "atleta": "GABRIELA MACHADO COLÉGIO MARISTA DE B",
+          "registro": "V380135",
+          "nascimento": "2010",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:33 61",
+          "pontos": "0,00",
+          "indice": "346"
+        },
+        {
+          "colocacao": "21º",
+          "serie": "3",
+          "raia": "3",
+          "atleta": "ANA CAROLINA RIBEIRO",
+          "registro": "V401548",
+          "nascimento": "2010",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:34 52",
+          "pontos": "0,00",
+          "indice": "319"
+        },
+        {
+          "colocacao": "24º",
+          "serie": "4",
+          "raia": "2",
+          "atleta": "SOFIA FEITOSA",
+          "registro": "381746",
+          "nascimento": "2010",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:35 70",
+          "pontos": "0,00",
+          "indice": "289"
+        },
+        {
+          "colocacao": "29º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "CECILIA SANTOS COLÉGIO MARISTA DE B",
+          "registro": "V384269",
+          "nascimento": "2010",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:37 22",
+          "pontos": "0,00",
+          "indice": "255"
+        },
+        {
+          "colocacao": "30º",
+          "serie": "2",
+          "raia": "1",
+          "atleta": "SOFIA SILVA SOARES",
+          "registro": "V409556",
+          "nascimento": "2009",
+          "entidade": "ACAD CORPO E SAUDE",
+          "tempo": "00:37 54",
+          "pontos": "0,00",
+          "indice": "248"
+        },
+        {
+          "colocacao": "35º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "ANA GABRIELLY LACERDA",
+          "registro": "V412837",
+          "nascimento": "2010",
+          "entidade": "ACAD CORPO E SAUDE",
+          "tempo": "00:41 43",
+          "pontos": "0,00",
+          "indice": "185"
+        }
+      ]
+    },
+    {
+      "prova": "9ª PROVA",
+      "descricao": "50 METROS LIVRE FEMININO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "4º",
+          "serie": "1",
+          "raia": "7",
+          "atleta": "LUISA QUEIROGA",
+          "registro": "357667",
+          "nascimento": "2008",
+          "entidade": "MBTC",
+          "tempo": "00:30 59",
+          "pontos": "0,00",
+          "indice": "459"
+        },
+        {
+          "colocacao": "6º",
+          "serie": "5",
+          "raia": "6",
+          "atleta": "MARIA CLARA JACARANDA GALLINDO",
+          "registro": "345680",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:31 35",
+          "pontos": "0,00",
+          "indice": "427"
+        },
+        {
+          "colocacao": "19º",
+          "serie": "4",
+          "raia": "6",
+          "atleta": "ANALICE DE ANDRADE LIMA",
+          "registro": "343600",
+          "nascimento": "2008",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:34 02",
+          "pontos": "0,00",
+          "indice": "334"
+        },
+        {
+          "colocacao": "22º",
+          "serie": "4",
+          "raia": "8",
+          "atleta": "BEATRIZ ALVES NASCIMENTO",
+          "registro": "366608",
+          "nascimento": "2008",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:34 72",
+          "pontos": "0,00",
+          "indice": "314"
+        },
+        {
+          "linha_bruta": "27º 3 8 LUIZA FERREIRA V378858 2008 LASALLE AGUAS CLARA00S:36 38 0,00 273"
+        }
+      ]
+    },
+    {
+      "prova": "10ª PROVA",
+      "descricao": "50 METROS LIVRE MASCULINO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "26º",
+          "serie": "5",
+          "raia": "2",
+          "atleta": "PEDRO OLIVEIRA MARINHO",
+          "registro": "386581",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:31 61",
+          "pontos": "0,00",
+          "indice": "289"
+        },
+        {
+          "colocacao": "27º",
+          "serie": "5",
+          "raia": "1",
+          "atleta": "CALIEL BISPO",
+          "registro": "379953",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:31 79",
+          "pontos": "0,00",
+          "indice": "284"
+        },
+        {
+          "colocacao": "29º",
+          "serie": "5",
+          "raia": "3",
+          "atleta": "RAFAEL SANTOS VIEIRA",
+          "registro": "394610",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:32 41",
+          "pontos": "0,00",
+          "indice": "268"
+        },
+        {
+          "colocacao": "31º",
+          "serie": "5",
+          "raia": "8",
+          "atleta": "GABRIEL VIEIRA BORGES",
+          "registro": "375311",
+          "nascimento": "2013",
+          "entidade": "MBTC",
+          "tempo": "00:32 61",
+          "pontos": "0,00",
+          "indice": "263"
+        },
+        {
+          "colocacao": "34º",
+          "serie": "4",
+          "raia": "6",
+          "atleta": "JOAO EDUARDO SANTOS",
+          "registro": "379989",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:33 26",
+          "pontos": "0,00",
+          "indice": "248"
+        },
+        {
+          "colocacao": "37º",
+          "serie": "3",
+          "raia": "4",
+          "atleta": "NICOLAS LIMA LOPES",
+          "registro": "392337",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:35 14",
+          "pontos": "0,00",
+          "indice": "210"
+        },
+        {
+          "colocacao": "41º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "MURILO NIETSCHE BREVES",
+          "registro": "V421285",
+          "nascimento": "2013",
+          "entidade": "MBTC",
+          "tempo": "00:36 03",
+          "pontos": "0,00",
+          "indice": "195"
+        },
+        {
+          "colocacao": "43º",
+          "serie": "3",
+          "raia": "1",
+          "atleta": "DANIEL RABELO LA SALLE ÁGUAS CLARA",
+          "registro": "378855",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:38 18",
+          "pontos": "0,00",
+          "indice": "164"
+        },
+        {
+          "colocacao": "45º",
+          "serie": "3",
+          "raia": "7",
+          "atleta": "TOMAS GUEDES FAUSTINO",
+          "registro": "380095",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:39 34",
+          "pontos": "0,00",
+          "indice": "150"
+        },
+        {
+          "colocacao": "46º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "CAIO REQUENA GARRIDO",
+          "registro": "V421286",
+          "nascimento": "2013",
+          "entidade": "MBTC",
+          "tempo": "00:39 48",
+          "pontos": "0,00",
+          "indice": "148"
+        },
+        {
+          "colocacao": "47º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "BENTO DOMINGUES BARROS",
+          "registro": "408913",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:39 57",
+          "pontos": "0,00",
+          "indice": "147"
+        },
+        {
+          "colocacao": "48º",
+          "serie": "3",
+          "raia": "8",
+          "atleta": "HEITOR COSCRATO BALSAMOLA SALLE ÁGUAS CLARA",
+          "registro": "V392365",
+          "nascimento": "2013",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:40 89",
+          "pontos": "0,00",
+          "indice": "133"
+        },
+        {
+          "colocacao": "49º",
+          "serie": "2",
+          "raia": "1",
+          "atleta": "BERNARDO MARCAL DAMASCENO",
+          "registro": "411898",
+          "nascimento": "2014",
+          "entidade": "MBTC",
+          "tempo": "00:44 01",
+          "pontos": "0,00",
+          "indice": "107"
+        },
+        {
+          "colocacao": "50º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "NOAH CAVALHEIRO",
+          "registro": "379575",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:44 41",
+          "pontos": "0,00",
+          "indice": "104"
+        }
+      ]
+    },
+    {
+      "prova": "10ª PROVA",
+      "descricao": "50 METROS LIVRE MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "18º",
+          "serie": "6",
+          "raia": "3",
+          "atleta": "PEDRO LUCAS BRITO DE OLIVEIRA",
+          "registro": "361435",
+          "nascimento": "2012",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:29 26",
+          "pontos": "0,00",
+          "indice": "364"
+        },
+        {
+          "colocacao": "20º",
+          "serie": "6",
+          "raia": "6",
+          "atleta": "MARCUS VINICIUS CARVALHO",
+          "registro": "406587",
+          "nascimento": "2011",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:29 55",
+          "pontos": "0,00",
+          "indice": "354"
+        },
+        {
+          "colocacao": "23º",
+          "serie": "5",
+          "raia": "7",
+          "atleta": "ENZO GODOI CAVALCANTE LA SALLE ÁGUAS CLARA",
+          "registro": "378872",
+          "nascimento": "2012",
+          "entidade": "MBTC",
+          "tempo": "00:30 20",
+          "pontos": "0,00",
+          "indice": "331"
+        },
+        {
+          "linha_bruta": "24º 5 4 CARLOS EDUARDO CERQUEIRAL  S)ALLE ÁGUAS CLARA 378860 2012 SESC OLIMPICO 00:30 40 0,00 325"
+        },
+        {
+          "linha_bruta": "25º 6 8 DANILO ALCANTARA SOUSA LA SALLE ÁGUAS CLARA V396718 2011 LASALLE AGUAS CLARA00S:31 59 0,00 290"
+        },
+        {
+          "colocacao": "28º",
+          "serie": "4",
+          "raia": "4",
+          "atleta": "ENZO MIGUEL BOHRER",
+          "registro": "V394774",
+          "nascimento": "2012",
+          "entidade": "MBTC",
+          "tempo": "00:31 88",
+          "pontos": "0,00",
+          "indice": "282"
+        },
+        {
+          "linha_bruta": "32º 4 3 DAVI LINS LA SALLE ÁGUAS CLARA V378868 2011 LASALLE AGUAS CLARA00S:32 87 0,00 257"
+        },
+        {
+          "colocacao": "33º",
+          "serie": "4",
+          "raia": "2",
+          "atleta": "DAVI MATTIOLI CORREA",
+          "registro": "407272",
+          "nascimento": "2012",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:33 24",
+          "pontos": "0,00",
+          "indice": "248"
+        },
+        {
+          "colocacao": "38º",
+          "serie": "4",
+          "raia": "8",
+          "atleta": "AMIR COURBIS FARES",
+          "registro": "405635",
+          "nascimento": "2012",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:35 30",
+          "pontos": "0,00",
+          "indice": "207"
+        },
+        {
+          "colocacao": "39º",
+          "serie": "3",
+          "raia": "5",
+          "atleta": "LUCCA JARDIM ANDREOLI",
+          "registro": "407643",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:35 36",
+          "pontos": "0,00",
+          "indice": "206"
+        },
+        {
+          "colocacao": "40º",
+          "serie": "3",
+          "raia": "6",
+          "atleta": "ISAAC RODRIGUES SOUSA",
+          "registro": "V418597",
+          "nascimento": "2012",
+          "entidade": "MBTC",
+          "tempo": "00:35 97",
+          "pontos": "0,00",
+          "indice": "196"
+        },
+        {
+          "colocacao": "42º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "DAVI CAETANO LYRA",
+          "registro": "V418488",
+          "nascimento": "2012",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "00:37 07",
+          "pontos": "0,00",
+          "indice": "179"
+        },
+        {
+          "colocacao": "43º",
+          "serie": "3",
+          "raia": "3",
+          "atleta": "PAULO MELLO ISHIDA",
+          "registro": "V411711",
+          "nascimento": "2011",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "00:38 18",
+          "pontos": "0,00",
+          "indice": "164"
+        }
+      ]
+    },
+    {
+      "prova": "10ª PROVA",
+      "descricao": "50 METROS LIVRE MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "6º",
+          "serie": "8",
+          "raia": "1",
+          "atleta": "LUCAS VALADÃO",
+          "registro": "387862",
+          "nascimento": "2009",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:26 00",
+          "pontos": "0,00",
+          "indice": "520"
+        },
+        {
+          "colocacao": "8º",
+          "serie": "7",
+          "raia": "7",
+          "atleta": "MATEUS RODRIGUES ESPINDOLA",
+          "registro": "392436",
+          "nascimento": "2009",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:26 34",
+          "pontos": "0,00",
+          "indice": "500"
+        },
+        {
+          "colocacao": "14º",
+          "serie": "7",
+          "raia": "1",
+          "atleta": "LUCAS HENRIQUE MACKENZIE DF",
+          "registro": "343160",
+          "nascimento": "2010",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "00:27 36",
+          "pontos": "0,00",
+          "indice": "446"
+        },
+        {
+          "colocacao": "15º",
+          "serie": "7",
+          "raia": "6",
+          "atleta": "VITOR LIMA BRAGA DOS SANTBOOSLSA ATLETA",
+          "registro": "344300",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "00:27 53",
+          "pontos": "0,00",
+          "indice": "438"
+        },
+        {
+          "linha_bruta": "16º 1 7 GABRIEL WANGLER FARAGE LA SALLE ÁGUAS CLARA V408804 2010 LASALLE AGUAS CLARA00S:27 87 0,00 422"
+        },
+        {
+          "colocacao": "17º",
+          "serie": "6",
+          "raia": "5",
+          "atleta": "KENZO FRANCO LA SALLE ÁGUAS CLARA",
+          "registro": "378853",
+          "nascimento": "2009",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:28 86",
+          "pontos": "0,00",
+          "indice": "380"
+        },
+        {
+          "colocacao": "19º",
+          "serie": "6",
+          "raia": "2",
+          "atleta": "ERIK THOR RUBIN",
+          "registro": "384836",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "00:29 48",
+          "pontos": "0,00",
+          "indice": "356"
+        },
+        {
+          "colocacao": "21º",
+          "serie": "6",
+          "raia": "7",
+          "atleta": "HUGO LEONARDO",
+          "registro": "388513",
+          "nascimento": "2010",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:29 79",
+          "pontos": "0,00",
+          "indice": "345"
+        },
+        {
+          "colocacao": "22º",
+          "serie": "6",
+          "raia": "1",
+          "atleta": "PEDRO FARIAS VIDAL LA SALLE ÁGUAS CLARA",
+          "registro": "405413",
+          "nascimento": "2009",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:30 01",
+          "pontos": "0,00",
+          "indice": "338"
+        },
+        {
+          "colocacao": "30º",
+          "serie": "5",
+          "raia": "6",
+          "atleta": "MIGUEL AMARO SOUSA",
+          "registro": "V409559",
+          "nascimento": "2010",
+          "entidade": "ACAD CORPO E SAUDE",
+          "tempo": "00:32 44",
+          "pontos": "0,00",
+          "indice": "267"
+        },
+        {
+          "colocacao": "35º",
+          "serie": "4",
+          "raia": "5",
+          "atleta": "YAN LACERDA NEVES",
+          "registro": "V409557",
+          "nascimento": "2009",
+          "entidade": "ACAD CORPO E SAUDE",
+          "tempo": "00:33 73",
+          "pontos": "0,00",
+          "indice": "238"
+        }
+      ]
+    },
+    {
+      "prova": "10ª PROVA",
+      "descricao": "50 METROS LIVRE MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "4º",
+          "serie": "8",
+          "raia": "2",
+          "atleta": "FELIPE AVILA MAIA",
+          "registro": "312673",
+          "nascimento": "2007",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:25 66",
+          "pontos": "0,00",
+          "indice": "541"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "8",
+          "raia": "7",
+          "atleta": "DAVI SANTOS BRASIL",
+          "registro": "342883",
+          "nascimento": "2007",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:25 90",
+          "pontos": "0,00",
+          "indice": "526"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "7",
+          "raia": "3",
+          "atleta": "GUILHERME SANTOS COLÉGIO MARISTA DE B",
+          "registro": "V377215",
+          "nascimento": "2008",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:26 44",
+          "pontos": "0,00",
+          "indice": "494"
+        },
+        {
+          "colocacao": "10º",
+          "serie": "7",
+          "raia": "4",
+          "atleta": "VINICIUS BRITO DE OLIVEIRA",
+          "registro": "328709",
+          "nascimento": "2007",
+          "entidade": "MBTC",
+          "tempo": "00:26 48",
+          "pontos": "0,00",
+          "indice": "492"
+        },
+        {
+          "colocacao": "10º",
+          "serie": "7",
+          "raia": "5",
+          "atleta": "FELIPE PRATA DIAS",
+          "registro": "378854",
+          "nascimento": "2008",
+          "entidade": "MBTC",
+          "tempo": "00:26 48",
+          "pontos": "0,00",
+          "indice": "492"
+        },
+        {
+          "colocacao": "12º",
+          "serie": "7",
+          "raia": "8",
+          "atleta": "AMIR VIEIRA BORGES",
+          "registro": "390495",
+          "nascimento": "2007",
+          "entidade": "MBTC",
+          "tempo": "00:26 80",
+          "pontos": "0,00",
+          "indice": "474"
+        },
+        {
+          "colocacao": "13º",
+          "serie": "7",
+          "raia": "2",
+          "atleta": "YEHIA BADR FREDDI",
+          "registro": "386470",
+          "nascimento": "2008",
+          "entidade": "MBTC",
+          "tempo": "00:27 03",
+          "pontos": "0,00",
+          "indice": "462"
+        },
+        {
+          "colocacao": "36º",
+          "serie": "2",
+          "raia": "8",
+          "atleta": "LUIZ GLADSTONE SILVA",
+          "registro": "V409576",
+          "nascimento": "2008",
+          "entidade": "ACAD CORPO E SAUDE",
+          "tempo": "00:34 36",
+          "pontos": "0,00",
+          "indice": "225"
+        }
+      ]
+    },
+    {
+      "prova": "10ª PROVA",
+      "descricao": "50 METROS LIVRE MASCULINO",
+      "categoria": "SENIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 8 3 WITOR HUGO DA SILVA LIMA BOLSA ATLETA/DF 313518 2004 MBTC 00:24 30 0,00 637"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "8",
+          "raia": "4",
+          "atleta": "KALEBE LOPES DE ANDRADE",
+          "registro": "109549",
+          "nascimento": "1999",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "00:24 67",
+          "pontos": "0,00",
+          "indice": "608"
+        },
+        {
+          "colocacao": "3º",
+          "serie": "8",
+          "raia": "6",
+          "atleta": "PEDRO DE CARVALHO MARINHO",
+          "registro": "326091",
+          "nascimento": "2005",
+          "entidade": "MBTC",
+          "tempo": "00:25 02",
+          "pontos": "0,00",
+          "indice": "583"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "8",
+          "raia": "8",
+          "atleta": "GABRIEL FERREIRA MATOS",
+          "registro": "369610",
+          "nascimento": "2003",
+          "entidade": "MBTC",
+          "tempo": "00:26 02",
+          "pontos": "0,00",
+          "indice": "518"
+        }
+      ]
+    },
+    {
+      "prova": "11ª PROVA",
+      "descricao": "50 METROS LIVRE FEMININO",
+      "categoria": "PRÉ-MIRIM",
+      "data": "22/02/2025",
+      "resultados": []
+    },
+    {
+      "prova": "11ª PROVA",
+      "descricao": "50 METROS LIVRE FEMININO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "MARINA TREMENDANI SILVA",
+          "registro": "V412768",
+          "nascimento": "2015",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "00:36 21",
+          "pontos": "0,00",
+          "indice": "277"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "1",
+          "raia": "2",
+          "atleta": "LUISA SILVEIRA SADECK",
+          "registro": "409144",
+          "nascimento": "2015",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:43 50",
+          "pontos": "0,00",
+          "indice": "159"
+        },
+        {
+          "linha_bruta": "3º 1 5 ANGELA WOHLERS VIANA LA SALLE ÁGUAS CLARA V392241 2015 LASALLE AGUAS CLARA00S:44 13 0,00 153"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "1",
+          "raia": "6",
+          "atleta": "LORENA ALVES CARVALHO",
+          "registro": "V412980",
+          "nascimento": "2016",
+          "entidade": "ACADEMIA NO LIMITE",
+          "tempo": "00:44 27",
+          "pontos": "0,00",
+          "indice": "151"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "LAURA BARBOSA MARQUES",
+          "registro": "411812",
+          "nascimento": "2015",
+          "entidade": "MBTC",
+          "tempo": "00:47 17",
+          "pontos": "0,00",
+          "indice": "125"
+        },
+        {
+          "colocacao": "6º",
+          "serie": "1",
+          "raia": "8",
+          "atleta": "LARA VIEIRA BORGES",
+          "registro": "421282",
+          "nascimento": "2016",
+          "entidade": "MBTC",
+          "tempo": "01:01 94",
+          "pontos": "0,00",
+          "indice": "55"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "1",
+          "raia": "1",
+          "atleta": "HEMILY ALVES",
+          "registro": "388808",
+          "nascimento": "2015",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "01:12 55",
+          "pontos": "0,00",
+          "indice": "34"
+        }
+      ]
+    },
+    {
+      "prova": "12ª PROVA",
+      "descricao": "50 METROS LIVRE MASCULINO",
+      "categoria": "PRÉ-MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "7º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "JOSE RODRIGUES CARVALHO",
+          "registro": "V414169",
+          "nascimento": "2017",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "00:56 13",
+          "pontos": "0,00",
+          "indice": "51"
+        }
+      ]
+    },
+    {
+      "prova": "12ª PROVA",
+      "descricao": "50 METROS LIVRE MASCULINO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "TOMAS SILVA DIAS",
+          "registro": "418668",
+          "nascimento": "2016",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:42 11",
+          "pontos": "0,00",
+          "indice": "122"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "BENJAMIN FORTES ALVARENGA",
+          "registro": "409105",
+          "nascimento": "2015",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "00:42 61",
+          "pontos": "0,00",
+          "indice": "118"
+        },
+        {
+          "linha_bruta": "3º 2 4 ANDRE NOGUEIRA LEITAO LA SALLE ÁGUAS CLARA V392240 2016 LASALLE AGUAS CLARA00S:43 29 0,00 112"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "2",
+          "raia": "7",
+          "atleta": "NICOLAS MATOS PIRES",
+          "registro": "V405628",
+          "nascimento": "2016",
+          "entidade": "ACADEMIA NO LIMITE",
+          "tempo": "00:43 37",
+          "pontos": "0,00",
+          "indice": "112"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "DANIEL SEGALERBA MARANHAO",
+          "registro": "V397398",
+          "nascimento": "2015",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "00:43 90",
+          "pontos": "0,00",
+          "indice": "108"
+        },
+        {
+          "linha_bruta": "6º 2 2 PEDRO HENRIQUE LA SALLE ÁGUAS CLARA V378851 2015 LASALLE AGUAS CLARA00S:48 96 0,00 77"
+        }
+      ]
+    },
+    {
+      "prova": "13ª PROVA",
+      "descricao": "800 METROS LIVRE FEMININO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "8º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "MARIANA QUEIROGA",
+          "registro": "370025",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "12:34 41",
+          "pontos": "0,00",
+          "indice": "265"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "CATARINA PEREIRA",
+          "registro": "379559",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "12:42 88",
+          "pontos": "0,00",
+          "indice": "256"
+        },
+        {
+          "colocacao": "11º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "FERNANDA CAVALCA",
+          "registro": "386583",
+          "nascimento": "2014",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "13:33 42",
+          "pontos": "0,00",
+          "indice": "211"
+        }
+      ]
+    },
+    {
+      "prova": "13ª PROVA",
+      "descricao": "800 METROS LIVRE FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "5º",
+          "serie": "2",
+          "raia": "1",
+          "atleta": "ALICE GUEDES",
+          "registro": "380070",
+          "nascimento": "2012",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "11:21 88",
+          "pontos": "0,00",
+          "indice": "359"
+        },
+        {
+          "colocacao": "6º",
+          "serie": "2",
+          "raia": "7",
+          "atleta": "BRUNA MARTINS VIEIRA",
+          "registro": "394609",
+          "nascimento": "2012",
+          "entidade": "NATARE",
+          "tempo": "11:54 15",
+          "pontos": "0,00",
+          "indice": "312"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "1",
+          "raia": "6",
+          "atleta": "MAITE VELASQUEZ SHOJI",
+          "registro": "407271",
+          "nascimento": "2012",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "12:05 37",
+          "pontos": "0,00",
+          "indice": "298"
+        }
+      ]
+    },
+    {
+      "prova": "13ª PROVA",
+      "descricao": "800 METROS LIVRE FEMININO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "2º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "MARIA EDUARDA NOBREGA",
+          "registro": "375933",
+          "nascimento": "2010",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "10:08 35",
+          "pontos": "0,00",
+          "indice": "506"
+        }
+      ]
+    },
+    {
+      "prova": "13ª PROVA",
+      "descricao": "800 METROS LIVRE FEMININO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "CAROLINA DINIZ MARQUES BOLSA ATLETA",
+          "registro": "333173",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "09:34 08",
+          "pontos": "0,00",
+          "indice": "602"
+        },
+        {
+          "colocacao": "3º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "JULIANA ALMEIDA SANTOS",
+          "registro": "318611",
+          "nascimento": "2007",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "10:18 91",
+          "pontos": "0,00",
+          "indice": "480"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "HELENA SANTOS DE LACERDA",
+          "registro": "325395",
+          "nascimento": "2006",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "11:01 37",
+          "pontos": "0,00",
+          "indice": "393"
+        },
+        {
+          "colocacao": "10º",
+          "serie": "2",
+          "raia": "8",
+          "atleta": "LUIZA MARTINS VIEIRA",
+          "registro": "405713",
+          "nascimento": "2007",
+          "entidade": "NATARE",
+          "tempo": "12:42 98",
+          "pontos": "0,00",
+          "indice": "256"
+        }
+      ]
+    },
+    {
+      "prova": "14ª PROVA",
+      "descricao": "1500 METROS NADO LIVRE MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "GABRIEL GONCALVES",
+          "registro": "380075",
+          "nascimento": "2011",
+          "entidade": "NATARE",
+          "tempo": "19:47 46",
+          "pontos": "0,00",
+          "indice": "394"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "1",
+          "raia": "6",
+          "atleta": "MATHEUS RATUND OLIVEIRA 704 VEÍCULOS",
+          "registro": "375918",
+          "nascimento": "2012",
+          "entidade": "NATARE",
+          "tempo": "20:54 08",
+          "pontos": "0,00",
+          "indice": "335"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "GABRIEL OLIVEIRA COELHO",
+          "registro": "405365",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "21:56 96",
+          "pontos": "0,00",
+          "indice": "289"
+        }
+      ]
+    },
+    {
+      "prova": "14ª PROVA",
+      "descricao": "1500 METROS NADO LIVRE MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "3º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "LUCAS FERREIRA",
+          "registro": "369528",
+          "nascimento": "2009",
+          "entidade": "NATARE",
+          "tempo": "21:04 98",
+          "pontos": "0,00",
+          "indice": "326"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "1",
+          "raia": "2",
+          "atleta": "HUGO LEONARDO",
+          "registro": "388513",
+          "nascimento": "2010",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "30:41 20",
+          "pontos": "0,00",
+          "indice": "105"
+        }
+      ]
+    },
+    {
+      "prova": "15ª PROVA",
+      "descricao": "200 METROS MEDLEY FEMININO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "JULIA SIMOES VERSIANI",
+          "registro": "392154",
+          "nascimento": "2015",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:33 70",
+          "pontos": "0,00",
+          "indice": "205"
+        }
+      ]
+    },
+    {
+      "prova": "16ª PROVA",
+      "descricao": "200 METROS MEDLEY MASCULINO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "DAVI OLIVEIRA COELHO",
+          "registro": "405366",
+          "nascimento": "2015",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:51 18",
+          "pontos": "0,00",
+          "indice": "119"
+        }
+      ]
+    },
+    {
+      "prova": "17ª PROVA",
+      "descricao": "400 METROS MEDLEY FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "ALICE VIÇOSA CRUZ BOLSA ATLETA",
+          "registro": "344283",
+          "nascimento": "2011",
+          "entidade": "FLUMINENSE FC/RJ",
+          "tempo": "05:29 24",
+          "pontos": "0,00",
+          "indice": "526"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "NALU JACARANDÁ GALLINDO",
+          "registro": "352904",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "06:03 24",
+          "pontos": "0,00",
+          "indice": "392"
+        },
+        {
+          "linha_bruta": "3º 1 5 GABRIELA CAVALCA FIGUEIREDBOOLSA ATLETA/DF 386582 2012 ASBAC/AQUÁTICOS 06:10 89 0,00 368"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "1",
+          "raia": "6",
+          "atleta": "ESTHER JULIANA SILVA",
+          "registro": "V407465",
+          "nascimento": "2011",
+          "entidade": "ACADEMIA NO LIMITE",
+          "tempo": "07:49 60",
+          "pontos": "0,00",
+          "indice": "181"
+        }
+      ]
+    },
+    {
+      "prova": "18ª PROVA",
+      "descricao": "400 METROS MEDLEY MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "8º",
+          "serie": "1",
+          "raia": "1",
+          "atleta": "MARCUS VINICIUS CARVALHO",
+          "registro": "406587",
+          "nascimento": "2011",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "06:12 00",
+          "pontos": "0,00",
+          "indice": "277"
+        }
+      ]
+    },
+    {
+      "prova": "18ª PROVA",
+      "descricao": "400 METROS MEDLEY MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "BRUNO TITO MENDONÇA BOLSA ATLETA",
+          "registro": "343099",
+          "nascimento": "2007",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:02 42",
+          "pontos": "0,00",
+          "indice": "515"
+        },
+        {
+          "colocacao": "2º",
+          "serie": "1",
+          "raia": "8",
+          "atleta": "LUCCA DE PAULA MACHADO TURTURRO",
+          "registro": "370033",
+          "nascimento": "2007",
+          "entidade": "HUGOLOBOSWIM",
+          "tempo": "05:08 29",
+          "pontos": "0,00",
+          "indice": "486"
+        },
+        {
+          "colocacao": "3º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "FELIPE AVILA MAIA",
+          "registro": "312673",
+          "nascimento": "2007",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:13 60",
+          "pontos": "0,00",
+          "indice": "462"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "1",
+          "raia": "2",
+          "atleta": "JOAO PEDRO RABELO",
+          "registro": "371696",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:29 70",
+          "pontos": "0,00",
+          "indice": "397"
+        },
+        {
+          "colocacao": "6º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "PEDRO ETCHEVERRIA SOUZA",
+          "registro": "347085",
+          "nascimento": "2006",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:33 17",
+          "pontos": "0,00",
+          "indice": "385"
+        },
+        {
+          "linha_bruta": "7º 1 6 KENUE TEIXEIRA SANTANA BOLSA ATLETA/DF 295735 2006 SESC OLIMPICO 06:00 23 0,00 305"
+        }
+      ]
+    },
+    {
+      "prova": "18ª PROVA",
+      "descricao": "400 METROS MEDLEY MASCULINO",
+      "categoria": "SENIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "4º",
+          "serie": "1",
+          "raia": "7",
+          "atleta": "PEDRO DE CARVALHO MARINHO",
+          "registro": "326091",
+          "nascimento": "2005",
+          "entidade": "MBTC",
+          "tempo": "05:18 15",
+          "pontos": "0,00",
+          "indice": "442"
+        },
+        {
+          "linha_bruta": "Etapa: 2 Data: 22/02/2025"
+        }
+      ]
+    },
+    {
+      "prova": "19ª PROVA",
+      "descricao": "400 METROS LIVRE FEMININO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "8º",
+          "serie": "2",
+          "raia": "1",
+          "atleta": "LETICIA PEREIRA",
+          "registro": "375803",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:33 24",
+          "pontos": "0,00",
+          "indice": "352"
+        },
+        {
+          "colocacao": "11º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "LAURA SIMOES VERSIANI",
+          "registro": "392155",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:58 93",
+          "pontos": "0,00",
+          "indice": "282"
+        },
+        {
+          "colocacao": "12º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "CATARINA PEREIRA",
+          "registro": "379559",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "06:03 10",
+          "pontos": "0,00",
+          "indice": "272"
+        },
+        {
+          "colocacao": "14º",
+          "serie": "1",
+          "raia": "6",
+          "atleta": "FERNANDA CAVALCA",
+          "registro": "386583",
+          "nascimento": "2014",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "06:41 81",
+          "pontos": "0,00",
+          "indice": "201"
+        },
+        {
+          "colocacao": "15º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "JULIA NASCIMENTO OLIVEIRA",
+          "registro": "408894",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "07:04 42",
+          "pontos": "0,00",
+          "indice": "170"
+        }
+      ]
+    },
+    {
+      "prova": "19ª PROVA",
+      "descricao": "400 METROS LIVRE FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "7º",
+          "serie": "2",
+          "raia": "7",
+          "atleta": "ALICE GUEDES",
+          "registro": "380070",
+          "nascimento": "2012",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:31 15",
+          "pontos": "0,00",
+          "indice": "359"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "1",
+          "raia": "2",
+          "atleta": "MAITE VELASQUEZ SHOJI",
+          "registro": "407271",
+          "nascimento": "2012",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "05:44 61",
+          "pontos": "0,00",
+          "indice": "318"
+        },
+        {
+          "colocacao": "10º",
+          "serie": "1",
+          "raia": "7",
+          "atleta": "ISABELA MENEZES MARQUES",
+          "registro": "417129",
+          "nascimento": "2011",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "05:47 00",
+          "pontos": "0,00",
+          "indice": "312"
+        },
+        {
+          "colocacao": "13º",
+          "serie": "2",
+          "raia": "8",
+          "atleta": "LUISA KEIKO",
+          "registro": "370981",
+          "nascimento": "2012",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "06:09 20",
+          "pontos": "0,00",
+          "indice": "259"
+        }
+      ]
+    },
+    {
+      "prova": "19ª PROVA",
+      "descricao": "400 METROS LIVRE FEMININO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "2º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "MARIA EDUARDA NOBREGA",
+          "registro": "375933",
+          "nascimento": "2010",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "04:57 09",
+          "pontos": "0,00",
+          "indice": "497"
+        },
+        {
+          "colocacao": "3º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "BEATRIZ DE BRITO HODUM BOLSA ATLETA",
+          "registro": "357800",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "05:00 66",
+          "pontos": "0,00",
+          "indice": "479"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "GABRIELA ALMEIDA",
+          "registro": "375917",
+          "nascimento": "2010",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:07 60",
+          "pontos": "0,00",
+          "indice": "448"
+        }
+      ]
+    },
+    {
+      "prova": "19ª PROVA",
+      "descricao": "400 METROS LIVRE FEMININO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "CAROLINA DINIZ MARQUES BOLSA ATLETA",
+          "registro": "333173",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "04:43 50",
+          "pontos": "0,00",
+          "indice": "572"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "1",
+          "raia": "1",
+          "atleta": "JULIANA ALMEIDA SANTOS",
+          "registro": "318611",
+          "nascimento": "2007",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:04 55",
+          "pontos": "0,00",
+          "indice": "461"
+        },
+        {
+          "colocacao": "6º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "HELENA SANTOS DE LACERDA",
+          "registro": "325395",
+          "nascimento": "2006",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:27 67",
+          "pontos": "0,00",
+          "indice": "370"
+        }
+      ]
+    },
+    {
+      "prova": "20ª PROVA",
+      "descricao": "400 METROS LIVRE MASCULINO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "18º",
+          "serie": "3",
+          "raia": "7",
+          "atleta": "RAFAEL SANTOS VIEIRA",
+          "registro": "394610",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:26 21",
+          "pontos": "0,00",
+          "indice": "307"
+        },
+        {
+          "colocacao": "20º",
+          "serie": "3",
+          "raia": "1",
+          "atleta": "VINICIUS RICARDO SOUZA",
+          "registro": "394605",
+          "nascimento": "2013",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "05:27 19",
+          "pontos": "0,00",
+          "indice": "304"
+        },
+        {
+          "colocacao": "21º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "PEDRO OLIVEIRA MARINHO",
+          "registro": "386581",
+          "nascimento": "2014",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:29 90",
+          "pontos": "0,00",
+          "indice": "296"
+        },
+        {
+          "colocacao": "22º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "VITOR MANZOLILLO",
+          "registro": "385766",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:40 28",
+          "pontos": "0,00",
+          "indice": "270"
+        },
+        {
+          "colocacao": "24º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "FELIPE DE BRITO",
+          "registro": "388761",
+          "nascimento": "2014",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "05:47 48",
+          "pontos": "0,00",
+          "indice": "254"
+        }
+      ]
+    },
+    {
+      "prova": "20ª PROVA",
+      "descricao": "400 METROS LIVRE MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "3º",
+          "serie": "3",
+          "raia": "4",
+          "atleta": "GABRIEL GONCALVES",
+          "registro": "380075",
+          "nascimento": "2011",
+          "entidade": "NATARE",
+          "tempo": "04:36 13",
+          "pontos": "0,00",
+          "indice": "506"
+        },
+        {
+          "colocacao": "7º",
+          "serie": "3",
+          "raia": "3",
+          "atleta": "ITALO BARRONCAS DE OLIVEIRBAOLSA ATLETA",
+          "registro": "349485",
+          "nascimento": "2011",
+          "entidade": "MBTC",
+          "tempo": "04:46 05",
+          "pontos": "0,00",
+          "indice": "455"
+        },
+        {
+          "colocacao": "15º",
+          "serie": "3",
+          "raia": "2",
+          "atleta": "VITOR COIMBRA",
+          "registro": "377793",
+          "nascimento": "2012",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "05:20 29",
+          "pontos": "0,00",
+          "indice": "324"
+        },
+        {
+          "colocacao": "16º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "DANTE BERNADELLI",
+          "registro": "364748",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:20 97",
+          "pontos": "0,00",
+          "indice": "322"
+        },
+        {
+          "colocacao": "19º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "GABRIEL OLIVEIRA COELHO",
+          "registro": "405365",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "05:27 12",
+          "pontos": "0,00",
+          "indice": "304"
+        },
+        {
+          "colocacao": "23º",
+          "serie": "1",
+          "raia": "3",
+          "atleta": "EDUARDO RABELO LA SALLE ÁGUAS CLARA",
+          "registro": "378856",
+          "nascimento": "2012",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "05:46 62",
+          "pontos": "0,00",
+          "indice": "255"
+        }
+      ]
+    },
+    {
+      "prova": "20ª PROVA",
+      "descricao": "400 METROS LIVRE MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "4",
+          "raia": "4",
+          "atleta": "MATEUS OLIVEIRA COELHO",
+          "registro": "375292",
+          "nascimento": "2009",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "04:21 59",
+          "pontos": "0,00",
+          "indice": "595"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "2",
+          "raia": "1",
+          "atleta": "PEDRO JAIME VIEIRA ALVES BOLSA ATLETA",
+          "registro": "343582",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "04:37 09",
+          "pontos": "0,00",
+          "indice": "500"
+        },
+        {
+          "colocacao": "13º",
+          "serie": "3",
+          "raia": "6",
+          "atleta": "ERIK THOR RUBIN",
+          "registro": "384836",
+          "nascimento": "2010",
+          "entidade": "MBTC",
+          "tempo": "05:13 53",
+          "pontos": "0,00",
+          "indice": "345"
+        },
+        {
+          "colocacao": "14º",
+          "serie": "3",
+          "raia": "8",
+          "atleta": "LUCAS HENRIQUE MACKENZIE DF",
+          "registro": "343160",
+          "nascimento": "2010",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "05:17 37",
+          "pontos": "0,00",
+          "indice": "333"
+        },
+        {
+          "colocacao": "25º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "KENZO FRANCO LA SALLE ÁGUAS CLARA",
+          "registro": "378853",
+          "nascimento": "2009",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "06:07 71",
+          "pontos": "0,00",
+          "indice": "214"
+        }
+      ]
+    },
+    {
+      "prova": "20ª PROVA",
+      "descricao": "400 METROS LIVRE MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "5º",
+          "serie": "4",
+          "raia": "8",
+          "atleta": "JOAO PEDRO RABELO",
+          "registro": "371696",
+          "nascimento": "2008",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "04:37 54",
+          "pontos": "0,00",
+          "indice": "498"
+        },
+        {
+          "colocacao": "8º",
+          "serie": "3",
+          "raia": "5",
+          "atleta": "AMIR VIEIRA BORGES",
+          "registro": "390495",
+          "nascimento": "2007",
+          "entidade": "MBTC",
+          "tempo": "04:51 28",
+          "pontos": "0,00",
+          "indice": "431"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "4",
+          "raia": "7",
+          "atleta": "DANIEL TITO MENDONÇA",
+          "registro": "343098",
+          "nascimento": "2007",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "04:53 29",
+          "pontos": "0,00",
+          "indice": "422"
+        },
+        {
+          "colocacao": "17º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "JOSUÉ PEREIRA MACHADO",
+          "registro": "V366606",
+          "nascimento": "2007",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "05:22 65",
+          "pontos": "0,00",
+          "indice": "317"
+        }
+      ]
+    },
+    {
+      "prova": "20ª PROVA",
+      "descricao": "400 METROS LIVRE MASCULINO",
+      "categoria": "SENIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "2º 4 5 KALEBE LOPES DE ANDRADE 109549 1)999 SESC OLIMPICO 04:33 36 0,00 521"
+        },
+        {
+          "linha_bruta": "6º 2 7 ALEXANDRE CÉSAR NÓBREGA 346508 2)005 IATE CLUBE BRASÍLIA 04:40 41 0,00 483"
+        },
+        {
+          "linha_bruta": "10º 4 6 MIKAEL DE REGETZ 343015 2)004 SESC OLIMPICO 04:54 30 0,00 418"
+        },
+        {
+          "linha_bruta": "11º 4 3 FILIPE MARQUES 373495 2)002 SESC OLIMPICO 04:57 37 0,00 405"
+        },
+        {
+          "linha_bruta": "12º 4 2 GABRIEL BARBOSA PEREIRA 343076 2)005 SESC OLIMPICO 05:00 56 0,00 392"
+        }
+      ]
+    },
+    {
+      "prova": "21ª PROVA",
+      "descricao": "200 METROS COSTAS FEMININO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "8º",
+          "serie": "2",
+          "raia": "3",
+          "atleta": "MARIANA QUEIROGA",
+          "registro": "370025",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:07 71",
+          "pontos": "0,00",
+          "indice": "282"
+        },
+        {
+          "colocacao": "12º",
+          "serie": "2",
+          "raia": "2",
+          "atleta": "JULIA DOS FERNANDES",
+          "registro": "V421284",
+          "nascimento": "2013",
+          "entidade": "MBTC",
+          "tempo": "03:12 20",
+          "pontos": "0,00",
+          "indice": "262"
+        },
+        {
+          "colocacao": "13º",
+          "serie": "2",
+          "raia": "6",
+          "atleta": "LETICIA PEREIRA",
+          "registro": "375803",
+          "nascimento": "2013",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "03:12 33",
+          "pontos": "0,00",
+          "indice": "262"
+        },
+        {
+          "colocacao": "14º",
+          "serie": "3",
+          "raia": "8",
+          "atleta": "LAIS VOGEL",
+          "registro": "370057",
+          "nascimento": "2013",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "03:17 44",
+          "pontos": "0,00",
+          "indice": "242"
+        },
+        {
+          "colocacao": "17º",
+          "serie": "2",
+          "raia": "8",
+          "atleta": "FERNANDA CAVALCA",
+          "registro": "386583",
+          "nascimento": "2014",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:31 43",
+          "pontos": "0,00",
+          "indice": "197"
+        }
+      ]
+    },
+    {
+      "prova": "21ª PROVA",
+      "descricao": "200 METROS COSTAS FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "2º",
+          "serie": "3",
+          "raia": "3",
+          "atleta": "NALU JACARANDÁ GALLINDO",
+          "registro": "352904",
+          "nascimento": "2011",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:49 38",
+          "pontos": "0,00",
+          "indice": "384"
+        },
+        {
+          "linha_bruta": "3º 2 1 GABRIELA CAVALCA FIGUEIREDBOOLSA ATLETA/DF 386582 2012 ASBAC/AQUÁTICOS 02:52 80 0,00 361"
+        },
+        {
+          "colocacao": "4º",
+          "serie": "3",
+          "raia": "7",
+          "atleta": "BRUNA MARTINS VIEIRA",
+          "registro": "394609",
+          "nascimento": "2012",
+          "entidade": "NATARE",
+          "tempo": "02:55 70",
+          "pontos": "0,00",
+          "indice": "344"
+        },
+        {
+          "colocacao": "5º",
+          "serie": "1",
+          "raia": "5",
+          "atleta": "ISABELA MENEZES MARQUES",
+          "registro": "417129",
+          "nascimento": "2011",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "02:57 82",
+          "pontos": "0,00",
+          "indice": "332"
+        },
+        {
+          "colocacao": "9º",
+          "serie": "3",
+          "raia": "2",
+          "atleta": "GABRIELA MORAES ASSIZ",
+          "registro": "V405715",
+          "nascimento": "2011",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "03:08 78",
+          "pontos": "0,00",
+          "indice": "277"
+        },
+        {
+          "colocacao": "10º",
+          "serie": "2",
+          "raia": "5",
+          "atleta": "RAFAELLA RODRIGUES FERREIRHAUGO LOBO SWIM",
+          "registro": "377847",
+          "nascimento": "2011",
+          "entidade": "COLEGIO MACKENZIE",
+          "tempo": "03:09 69",
+          "pontos": "0,00",
+          "indice": "273"
+        },
+        {
+          "colocacao": "11º",
+          "serie": "1",
+          "raia": "4",
+          "atleta": "MAITE VELASQUEZ SHOJI",
+          "registro": "407271",
+          "nascimento": "2012",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:11 55",
+          "pontos": "0,00",
+          "indice": "265"
+        },
+        {
+          "colocacao": "18º",
+          "serie": "2",
+          "raia": "4",
+          "atleta": "BEATRIZ DE SA QUIRINO",
+          "registro": "380071",
+          "nascimento": "2012",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:33 51",
+          "pontos": "0,00",
+          "indice": "191"
+        }
+      ]
+    },
+    {
+      "prova": "21ª PROVA",
+      "descricao": "200 METROS COSTAS FEMININO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "3",
+          "raia": "5",
+          "atleta": "JULIA MASSANEIRO",
+          "registro": "375916",
+          "nascimento": "2010",
+          "entidade": "IATE CLUBE BRASÍLIA",
+          "tempo": "02:48 55",
+          "pontos": "0,00",
+          "indice": "389"
+        },
+        {
+          "colocacao": "15º",
+          "serie": "1",
+          "raia": "6",
+          "atleta": "NATASHA THAIS GUEDES LA SALLE ÁGUAS CLARA",
+          "registro": "378859",
+          "nascimento": "2009",
+          "entidade": "ASBAC/AQUÁTICOS",
+          "tempo": "03:21 35",
+          "pontos": "0,00",
+          "indice": "228"
+        },
+        {
+          "colocacao": "16º",
+          "serie": "3",
+          "raia": "1",
+          "atleta": "CECILIA SANTOS COLÉGIO MARISTA DE B",
+          "registro": "V384269",
+          "nascimento": "2010",
+          "entidade": "MARISTA BSB AQUATICO",
+          "tempo": "03:28 08",
+          "pontos": "0,00",
+          "indice": "207"
+        }
+      ]
+    },
+    {
+      "prova": "21ª PROVA",
+      "descricao": "200 METROS COSTAS FEMININO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "6º 2 7 MARIA LUISA VALENÇA DE MORAES V362808 2)008 MARISTA BSB AQUATICO 03:00 57 0,00 317"
+        }
+      ]
+    },
+    {
+      "prova": "21ª PROVA",
+      "descricao": "200 METROS COSTAS FEMININO",
+      "categoria": "SENIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "7º 3 6 LETICIA DA SILVA COSTA VIANNA 343006 2)005 SESC OLIMPICO 03:01 22 0,00 313"
+        }
+      ]
+    },
+    {
+      "prova": "22ª PROVA",
+      "descricao": "200 METROS COSTAS MASCULINO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "10º 2 5 GABRIEL VIEIRA BORGES 375311 2T013 MBTC 03:07 07 0,00 214"
+        },
+        {
+          "linha_bruta": "12º 2 7 MURILO NIETSCHE BREVES V421285 2T013 MBTC 03:11 21 0,00 200"
+        },
+        {
+          "linha_bruta": "13º 2 6 VITOR MANZOLILLO 385766 2T013 IATE CLUBE BRASÍLIA 03:12 12 0,00 197"
+        },
+        {
+          "linha_bruta": "14º 2 2 RAFAEL SANTOS VIEIRA 394610 2T013 IATE CLUBE BRASÍLIA 03:14 73 0,00 189"
+        },
+        {
+          "linha_bruta": "16º 1 5 JOAO EDUARDO SANTOS 379989 2T014 SESC OLIMPICO 03:27 86 0,00 156"
+        }
+      ]
+    },
+    {
+      "prova": "22ª PROVA",
+      "descricao": "200 METROS COSTAS MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "6º 3 8 JACK ODIN RUBIN 384837 2)012 MBTC 02:44 15 0,00 316"
+        },
+        {
+          "linha_bruta": "9º 2 4 YURI BARBOSA OLIVEIRA 394726 2)012 SESC OLIMPICO 02:58 59 0,00 246"
+        }
+      ]
+    },
+    {
+      "prova": "22ª PROVA",
+      "descricao": "200 METROS COSTAS MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "3º 3 3 GABRIEL LOPES LAMAS CRUZBOLSA ATLETA 360603 2)010 IATE CLUBE BRASÍLIA 02:20 71 0,00 503"
+        },
+        {
+          "linha_bruta": "4º 3 5 LUCAS VALADÃO 387862 2)009 IATE CLUBE BRASÍLIA 02:22 47 0,00 484"
+        },
+        {
+          "linha_bruta": "7º 2 3 LUCAS HENRIQUE MACKENZIE DF 343160 2)010 COLEGIO MACKENZIE 02:45 12 0,00 311"
+        },
+        {
+          "linha_bruta": "11º 2 8 KENZO FRANCO LA SALLE ÁGUAS CLARA 378853 2)009 ASBAC/AQUÁTICOS 03:08 13 0,00 210"
+        },
+        {
+          "linha_bruta": "15º 1 4 PEDRO FARIAS VIDAL LA SALLE ÁGUAS CLARA 405413 2)009 ASBAC/AQUÁTICOS 03:16 86 0,00 183"
+        }
+      ]
+    },
+    {
+      "prova": "22ª PROVA",
+      "descricao": "200 METROS COSTAS MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 6 LUCCA DE PAULA MACHADO TURTURRO 370033 2)007 HUGOLOBOSWIM 02:16 54 0,00 550"
+        },
+        {
+          "linha_bruta": "2º 3 4 BRUNO TITO MENDONÇA BOLSA ATLETA 343099 2)007 IATE CLUBE BRASÍLIA 02:17 14 0,00 543"
+        },
+        {
+          "linha_bruta": "5º 3 6 FELIPE PRATA DIAS 378854 2)008 MBTC 02:31 12 0,00 406"
+        }
+      ]
+    },
+    {
+      "prova": "22ª PROVA",
+      "descricao": "200 METROS COSTAS MASCULINO",
+      "categoria": "SENIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "8º 3 2 RICARDO DA SILVA VIANNA NEFTOORÇA AÉREA BRASILEI 343020 20)03 SESC OLIMPICO 02:48 31 0,00 294"
+        }
+      ]
+    },
+    {
+      "prova": "23ª PROVA",
+      "descricao": "100 METROS PEITO FEMININO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 4 MARINA TREMENDANI SILVA V412768 2R015 COLEGIO MACKENZIE 01:50 51 0,00 195"
+        },
+        {
+          "linha_bruta": "2º 1 5 JULIA GUEDES COSTA 409104 2R015 IATE CLUBE BRASÍLIA 01:55 66 0,00 170"
+        },
+        {
+          "linha_bruta": "3º 1 3 LUISA SILVEIRA SADECK 409144 2R015 IATE CLUBE BRASÍLIA 02:02 73 0,00 142"
+        }
+      ]
+    },
+    {
+      "prova": "24ª PROVA",
+      "descricao": "100 METROS PEITO MASCULINO",
+      "categoria": "PRÉ-MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "4º",
+          "serie": "1",
+          "raia": "6",
+          "atleta": "LEONARDO GERMANO LIMA",
+          "registro": "V409407",
+          "nascimento": "2017",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:33 42",
+          "pontos": "0,00",
+          "indice": "50"
+        }
+      ]
+    },
+    {
+      "prova": "24ª PROVA",
+      "descricao": "100 METROS PEITO MASCULINO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 4 PEDRO HENRIQUE TAMER 392084 2R015 IATE CLUBE BRASÍLIA 02:00 54 0,00 105"
+        },
+        {
+          "linha_bruta": "2º 1 3 TOMAS SILVA DIAS 418668 2R016 IATE CLUBE BRASÍLIA 02:01 70 0,00 102"
+        },
+        {
+          "linha_bruta": "3º 1 5 BENJAMIN FORTES ALVARENGA 409105 2R015 IATE CLUBE BRASÍLIA 02:11 55 0,00 80"
+        }
+      ]
+    },
+    {
+      "prova": "25ª PROVA",
+      "descricao": "200 METROS PEITO FEMININO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 2 2 GABRIELA DE BRITO HODUM 362618 2T013 MBTC 03:42 39 0,00 236"
+        },
+        {
+          "linha_bruta": "2º 2 5 CATARINA PEREIRA 379559 2T014 IATE CLUBE BRASÍLIA 03:46 95 0,00 222"
+        },
+        {
+          "linha_bruta": "3º 2 3 LAURA SIMOES VERSIANI 392155 2T013 IATE CLUBE BRASÍLIA 04:00 97 0,00 185"
+        },
+        {
+          "linha_bruta": "4º 1 4 IRIS DA CARVALHO V414168 2T014 ASBAC/AQUÁTICOS 04:33 97 0,00 126"
+        }
+      ]
+    },
+    {
+      "prova": "25ª PROVA",
+      "descricao": "200 METROS PEITO FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 6 MAITE VELASQUEZ SHOJI 407271 2)012 ASBAC/AQUÁTICOS 03:20 24 0,00 324"
+        },
+        {
+          "linha_bruta": "2º 3 1 YASMIN BOEING 379951 2)011 SESC OLIMPICO 03:21 91 0,00 316"
+        },
+        {
+          "linha_bruta": "3º 2 8 JULIA BITTAR V384319 2)012 MARISTA BSB AQUATICO 03:24 68 0,00 303"
+        },
+        {
+          "linha_bruta": "4º 3 7 ISABELLA FERNANDA RIBEIRO 396989 2)012 SESC OLIMPICO 03:30 43 0,00 279"
+        },
+        {
+          "linha_bruta": "5º 2 1 HELENA ANGELICA FAMILIAR 396658 2)011 NATARE 03:32 09 0,00 272"
+        },
+        {
+          "linha_bruta": "6º 3 2 GABRIELA CAVALCA FIGUEIREDBOOLSA ATLETA/DF 386582 2)012 ASBAC/AQUÁTICOS 03:32 15 0,00 272"
+        },
+        {
+          "linha_bruta": "7º 3 8 BEATRIZ DE SA QUIRINO 380071 2)012 ASBAC/AQUÁTICOS 03:43 98 0,00 231"
+        },
+        {
+          "linha_bruta": "8º 2 4 LUISA KEIKO 370981 2)012 IATE CLUBE BRASÍLIA 03:48 02 0,00 219"
+        },
+        {
+          "linha_bruta": "9º 2 7 LARA ASSIS RECEPUTI 418682 2)011 MBTC 03:53 29 0,00 204"
+        }
+      ]
+    },
+    {
+      "prova": "25ª PROVA",
+      "descricao": "200 METROS PEITO FEMININO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 3 5 YASMIN PEREIRA ARAUJO 358044 2)010 MBTC 03:08 22 0,00 390"
+        },
+        {
+          "linha_bruta": "2º 3 3 MARINA SEGALERBA COLÉGIO MARISTA DE B V377218 2)009 MARISTA BSB AQUATICO 03:25 80 0,00 298"
+        },
+        {
+          "linha_bruta": "3º 1 5 ANA CAROLINA RIBEIRO V401548 2)010 SESC OLIMPICO 04:02 09 0,00 183"
+        }
+      ]
+    },
+    {
+      "prova": "25ª PROVA",
+      "descricao": "200 METROS PEITO FEMININO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 3 6 LUIZA MARTINS VIEIRA 405713 20)07 NATARE 03:36 09 0,00 257"
+        }
+      ]
+    },
+    {
+      "prova": "26ª PROVA",
+      "descricao": "200 METROS PEITO MASCULINO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 5 CALIEL BISPO 379953 2T014 SESC OLIMPICO 03:19 36 0,00 249"
+        },
+        {
+          "linha_bruta": "2º 1 3 NICOLAS LIMA LOPES 392337 2T014 SESC OLIMPICO 03:50 82 0,00 160"
+        },
+        {
+          "linha_bruta": "3º 2 6 GABRIEL VIEIRA BORGES 375311 2T013 MBTC 03:53 03 0,00 156"
+        },
+        {
+          "linha_bruta": "4º 2 5 NOAH CAVALHEIRO 379575 2T014 IATE CLUBE BRASÍLIA 03:53 42 0,00 155"
+        },
+        {
+          "linha_bruta": "5º 2 8 JOAO ARTHUR ARANTES V421233 2T013 ASBAC/AQUÁTICOS 04:08 48 0,00 128"
+        },
+        {
+          "linha_bruta": "6º 3 8 TOMAS GUEDES FAUSTINO 380095 2T014 IATE CLUBE BRASÍLIA 04:18 51 0,00 114"
+        }
+      ]
+    },
+    {
+      "prova": "26ª PROVA",
+      "descricao": "200 METROS PEITO MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 3 3 MARCUS VINICIUS CARVALHO 406587 20)11 ASBAC/AQUÁTICOS 03:01 85 0,00 328"
+        },
+        {
+          "linha_bruta": "2º 3 2 GUILHERME SILVA DIAS 352975 20)11 IATE CLUBE BRASÍLIA 03:07 14 0,00 301"
+        },
+        {
+          "linha_bruta": "3º 1 4 CARLOS EDUARDO CERQUEIRAL  S)ALLE ÁGUAS CLARA 378860 20)12 SESC OLIMPICO 03:19 56 0,00 248"
+        },
+        {
+          "linha_bruta": "4º 2 2 ENZO GODOI CAVALCANTE LA SALLE ÁGUAS CLARA 378872 20)12 MBTC 03:20 54 0,00 244"
+        },
+        {
+          "linha_bruta": "5º 3 1 VITOR COIMBRA 377793 20)12 SESC OLIMPICO 03:21 14 0,00 242"
+        },
+        {
+          "linha_bruta": "6º 3 7 LUCCA JARDIM ANDREOLI 407643 20)11 IATE CLUBE BRASÍLIA 03:23 02 0,00 236"
+        },
+        {
+          "linha_bruta": "7º 1 6 ENZO MIGUEL BOHRER V394774 20)12 MBTC 03:23 78 0,00 233"
+        },
+        {
+          "linha_bruta": "8º 2 1 DAVI MATTIOLI CORREA 407272 20)12 ASBAC/AQUÁTICOS 03:51 22 0,00 159"
+        }
+      ]
+    },
+    {
+      "prova": "26ª PROVA",
+      "descricao": "200 METROS PEITO MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 3 4 PEDRO JAIME VIEIRA ALVES BOLSA ATLETA 343582 2)010 MBTC 02:31 94 0,00 563"
+        },
+        {
+          "linha_bruta": "2º 3 6 PEDRO CESAR CASTRO 391362 20)09 NATARE 02:57 35 0,00 354"
+        },
+        {
+          "linha_bruta": "3º 2 4 LUCAS HENRIQUE MACKENZIE DF 343160 20)10 COLEGIO MACKENZIE 03:11 08 0,00 283"
+        },
+        {
+          "linha_bruta": "4º 2 7 HUGO LEONARDO 388513 20)10 ASBAC/AQUÁTICOS 03:22 16 0,00 239"
+        }
+      ]
+    },
+    {
+      "prova": "26ª PROVA",
+      "descricao": "200 METROS PEITO MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 3 5 GUILHERME SANTOS COLÉGIO MARISTA DE B V377215 2R0)08 MARISTA BSB AQUATICO 02:51 10 0,00 394"
+        }
+      ]
+    },
+    {
+      "prova": "26ª PROVA",
+      "descricao": "200 METROS PEITO MASCULINO",
+      "categoria": "SENIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 2 3 PEDRO DE CARVALHO MARINHO 326091 2R0)05 MBTC 02:53 00 0,00 381"
+        }
+      ]
+    },
+    {
+      "prova": "27ª PROVA",
+      "descricao": "100 METROS LIVRE FEMININO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 4 JULIA SIMOES VERSIANI 392154 2I0R15 IATE CLUBE BRASÍLIA 01:28 29 0,00 200"
+        },
+        {
+          "linha_bruta": "2º 1 6 JULIA GUEDES COSTA 409104 2I0R15 IATE CLUBE BRASÍLIA 01:28 91 0,00 196"
+        },
+        {
+          "linha_bruta": "3º 1 5 LUISA SILVEIRA SADECK 409144 2I0R15 IATE CLUBE BRASÍLIA 01:38 33 0,00 145"
+        }
+      ]
+    },
+    {
+      "prova": "28ª PROVA",
+      "descricao": "100 METROS LIVRE MASCULINO",
+      "categoria": "PRÉ-MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "colocacao": "1º",
+          "serie": "1",
+          "raia": "2",
+          "atleta": "LEONARDO GERMANO LIMA",
+          "registro": "V409407",
+          "nascimento": "2017",
+          "entidade": "SESC OLIMPICO",
+          "tempo": "02:11 00",
+          "pontos": "0,00",
+          "indice": "45"
+        }
+      ]
+    },
+    {
+      "prova": "28ª PROVA",
+      "descricao": "100 METROS LIVRE MASCULINO",
+      "categoria": "MIRIM",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 5 PEDRO HENRIQUE TAMER 392084 2I0R15 IATE CLUBE BRASÍLIA 01:35 78 0,00 117"
+        },
+        {
+          "linha_bruta": "2º 1 3 BENJAMIN FORTES ALVARENGA 409105 2I0R15 IATE CLUBE BRASÍLIA 01:36 87 0,00 113"
+        },
+        {
+          "linha_bruta": "3º 1 4 DAVI OLIVEIRA COELHO 405366 2I0R15 IATE CLUBE BRASÍLIA 01:39 96 0,00 103"
+        },
+        {
+          "linha_bruta": "4º 1 6 NICOLAS MATOS PIRES V405628 2I0R16 ACADEMIA NO LIMITE 01:40 96 0,00 99"
+        }
+      ]
+    },
+    {
+      "prova": "29ª PROVA",
+      "descricao": "1500 METROS NADO LIVRE FEMININO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 4 MAITE VELASQUEZ SHOJI 407271 2N0)12 ASBAC/AQUÁTICOS 22:36 36 0,00 312"
+        }
+      ]
+    },
+    {
+      "prova": "30ª PROVA",
+      "descricao": "800 METROS LIVRE MASCULINO",
+      "categoria": "PETIZ",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 2 2 PEDRO OLIVEIRA MARINHO 386581 2E0T14 IATE CLUBE BRASÍLIA 11:25 33 0,00 287"
+        }
+      ]
+    },
+    {
+      "prova": "30ª PROVA",
+      "descricao": "800 METROS LIVRE MASCULINO",
+      "categoria": "INFANTIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 2 7 JACK ODIN RUBIN 384837 2N0)12 MBTC 10:39 99 0,00 352"
+        },
+        {
+          "linha_bruta": "2º 1 4 MATHEUS RATUND OLIVEIRA 704 VEÍCULOS 375918 2N0)12 NATARE 10:51 49 0,00 334"
+        },
+        {
+          "linha_bruta": "3º 2 3 DANTE BERNADELLI 364748 2N0)11 IATE CLUBE BRASÍLIA 11:04 90 0,00 314"
+        }
+      ]
+    },
+    {
+      "prova": "30ª PROVA",
+      "descricao": "800 METROS LIVRE MASCULINO",
+      "categoria": "JUVENIL",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 2 5 LUCAS FERREIRA 369528 2V0)09 NATARE 10:50 30 0,00 336"
+        }
+      ]
+    },
+    {
+      "prova": "30ª PROVA",
+      "descricao": "800 METROS LIVRE MASCULINO",
+      "categoria": "JUNIOR",
+      "data": "22/02/2025",
+      "resultados": [
+        {
+          "linha_bruta": "1º 1 5 JOAO VICTOR DE FARIAS RIBEIRO 342992 2R00)6 SESC OLIMPICO 09:41 98 0,00 468"
+        },
+        {
+          "linha_bruta": "2º 2 6 MARCOS RICARDO ANDRADE 369919 2R00)8 IATE CLUBE BRASÍLIA 09:57 99 0,00 432"
+        },
+        {
+          "linha_bruta": "3º 2 4 DANIEL TITO MENDONÇA 343098 2R00)7 IATE CLUBE BRASÍLIA 10:25 88 0,00 376"
+        },
+        {
+          "linha_bruta": "4º 1 3 JOSUÉ PEREIRA MACHADO V366606 2R00)7 SESC OLIMPICO 11:53 03 0,00 254"
+        }
+      ]
+    }
+  ]
+}
