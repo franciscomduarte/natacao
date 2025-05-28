@@ -1,6 +1,7 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/sessao.php");
-include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
+include_once("../../config.php");
+
+header('Content-Type: application/json');
 
 $registro = $_GET['registro'] ?? '';
 $pdo = (new Conexao())->conectar();

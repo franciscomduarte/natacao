@@ -1,7 +1,4 @@
 <?php
-
-    require_once 'libs/pdfparser/alt_autoload.php-dist';
-
     function resumirProva($descricaoCompleta) {
         if (preg_match('/(\d+)\s+METROS\s+([A-ZÇ]+)/i', $descricaoCompleta, $matches)) {
             $distancia = $matches[1];
@@ -35,6 +32,19 @@
 
         $tempoFormatado = sprintf('%02d:%05.2f', $min, $seg);
         return $negativo ? "-$tempoFormatado" : $tempoFormatado;
+    }
+
+    function tempoParaCentesimos($tempo) {
+        // Divide minutos e o restante
+        list($minutos, $resto) = explode(":", $tempo);
+    
+        // Divide segundos e centésimos
+        list($segundos, $centesimos) = explode(".", $resto);
+    
+        // Converte tudo para centésimos
+        $totalCentesimos = ((int)$minutos * 60 + (int)$segundos) * 100 + (int)$centesimos;
+    
+        return $totalCentesimos;
     }
     function carregar_documentos($pasta) {
         $docs = [];

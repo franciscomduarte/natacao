@@ -9,7 +9,7 @@ class Atleta {
     public function buscarPorRegistro($registro) {
         $sql = "SELECT id, nome, nascimento FROM atleta WHERE registro = :registro";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindValue(':registro', 343160);
+        $stmt->bindValue(':registro', $registro);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }

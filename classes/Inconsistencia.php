@@ -22,4 +22,9 @@ class Inconsistencia {
         $stmt = $this->conn->prepare("DELETE FROM linha_nao_reconhecida WHERE id = ?");
         return $stmt->execute([$id]);
     }
+
+    public function atualizarSituacao($id) {
+        $stmt = $this->conn->prepare("UPDATE linha_nao_reconhecida SET situacao = 'Reconhecido' FROM linha_nao_reconhecida WHERE id = ?");
+        return $stmt->execute([$id]);
+    }
 }

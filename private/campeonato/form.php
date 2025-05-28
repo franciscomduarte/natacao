@@ -77,11 +77,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                             <div class="mb-3">
                                 <label>Chave</label>
-                                <input type="text" name="chave" class="form-control" required value="<?= htmlspecialchars($chave) ?>">
+                                <input type="text" name="chave" class="form-control" value="<?= htmlspecialchars($chave) ?>">
                             </div>
 
                             <button type="submit" class="btn btn-primary">Salvar</button>
-                            <a href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/private/campeonato" class="btn btn-secondary">Voltar</a>
+                            <a href="<?php echo BASE_URL ?>/private/campeonato" class="btn btn-secondary">Voltar</a>
                         </form>
                         </div>
                 </div>

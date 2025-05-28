@@ -5,6 +5,25 @@
      public function __construct($pdo) {
          $this->conn = $pdo;
      }
+
+     //TODO ainda falta finalizar.
+     public function inserir() {
+        $stmt = $this->conn->prepare("INSERT INTO resultado (prova_id,atleta_id,colocacao,serie,raia,atleta,registro,nascimento,entidade,tempo,tempo_centesimos,pontos,indice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");       
+        $stmt->bindParam(':prova_id', $this->prova_id);
+        $stmt->bindParam(':atleta_id', $this->atleta_id);
+        $stmt->bindParam(':colocacao', $this->colocacao);
+        $stmt->bindParam(':serie', $this->serie);
+        $stmt->bindParam(':raia', $this->raia);
+        $stmt->bindParam(':atleta', $this->atleta);
+        $stmt->bindParam(':registro', $this->registro);
+        $stmt->bindParam(':nascimento', $this->nascimento);
+        $stmt->bindParam(':entidade', $this->entidade);
+        $stmt->bindParam(':tempo', $this->tempo);
+        $stmt->bindParam(':tempo_centesimos', $this->tempo_centesimos);
+        $stmt->bindParam(':pontos', $this->pontos);
+        $stmt->bindParam(':indice', $this->indice);
+        return $stmt->execute();
+    }
  
      
      public function listarEntidades() {

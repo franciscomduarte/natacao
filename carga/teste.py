@@ -211,7 +211,7 @@ def pdf_para_json(path_pdf):
 
 # Uso
 if __name__ == "__main__":
-    nome_arquivo = "Torneio-Abertura-2025"
+    nome_arquivo = "co_inverno_petiz_2025"
     caminho_pdf = nome_arquivo + ".pdf"
     resultado_json = pdf_para_json(caminho_pdf)
 

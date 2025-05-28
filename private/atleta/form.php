@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <input type="number" name="nascimento" class="form-control" min="1900" max="<?= date('Y') ?>" required value="<?= htmlspecialchars($nascimento) ?>">
                             </div>
                             <button type="submit" class="btn btn-primary">Salvar</button>
-                            <a href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/private/atleta" class="btn btn-secondary">Voltar</a>
+                            <a href="<?php echo BASE_URL ?>/private/atleta" class="btn btn-secondary">Voltar</a>
                         </form>
                         </div>
                 </div>

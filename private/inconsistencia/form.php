@@ -7,44 +7,39 @@ $db = new Conexao();
 $pdo = $db->conectar();
 $resultadoObj = new Inconsistencia($pdo);
 
-$editando = false;
 $id = $_GET['id'] ?? null;
-$dadosResultado = [
-    'prova_id' => '',
-    'atleta_id' => '',
-    'colocacao' => '',
-    'serie' => '',
-    'raia' => '',
-    'atleta' => '',
-    'registro' => '',
-    'nascimento' => '',
-    'entidade' => '',
-    'tempo' => '',
-    'tempo_centesimos' => '',
-    'pontos' => '',
-    'indice' => '',
-    'linha_bruta' => '',
-    'sexo' => '',
-    'prova' => ''
-];
-
-$dadosAtleta = [
-    'registro' => '',
-    'nome' => '',
-    'nascimento' => ''
-];
-
 $resultado = $resultadoObj->buscarPorId($id);
-if ($resultado) {
-    $dadosAtleta = array_merge($dadosAtleta, $resultado);
-}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    foreach ($dadosAtleta as $campo => $valor) {
-        $dadosAtleta[$campo] = $_POST[$campo] ?? '';
+    $atleta_id = $_REQUEST['atleta_id'] ?? null;
+    if($atleta_id) {
+        $r = new Resultado($pdo);
+
+        $r->atleta_id = $_REQUEST['atleta_id'] ?? null;
+        $r->prova_id = $_REQUEST['prova_id'] ?? null;
+        $r->colocacao = $_REQUEST['colocacao'] ?? null;
+        $r->serie = $_REQUEST['serie'] ?? null;
+        $r->raia = $_REQUEST['raia'] ?? null;
+        $r->atleta = $_REQUEST['atleta'] ?? null;
+        $r->registro = $_REQUEST['registro'] ?? null;
+        $r->nascimento = $_REQUEST['nascimento'] ?? null;
+        $r->entidade = $_REQUEST['entidade'] ?? null;
+        $r->tempo = $_REQUEST['tempo'] ?? null;
+        $r->tempo_centesimos = tempoParaCentesimos($r->tempo) ?? null;
+        $r->pontos = $_REQUEST['pontos'] ?? null;
+        $r->indice = $_REQUEST['indice'] ?? null;
+
+        var_dump($r);
+        exit;
+
+        if($r->inserir()) {
+            $resultado = $resultadoObj->atualizarSituacao($id);
+        }
+        #echo "editar";
+    } else {
+        echo "salvar";
     }
-    $resultadoObj->inserir($dadosResultado);
-    header("Location: index.php");
+    #header("Location: index.php");
     exit;
 }
 ?>
@@ -56,40 +51,91 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="layout-page">
                 <div class="content-wrapper">
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h4 class="fw-bold py-3 mb-4"><?= $editando ? 'Editar' : 'Novo' ?> Resultado</h4>
+                        <h4 class="fw-bold py-3 mb-4"></h4>
 
                         <form method="POST">
                             <div class="mb-3">
-                                <label>Registro do Atleta</label>
-                                <input type="text" name="registro" id="registro" class="form-control" required>
-                            </div>
-                            <input type="hidden" name="atleta_id" id="atleta_id">
-
-                            <div class="mb-3">
-                                <label>Nome do Atleta</label>
-                                <input type="text" name="atleta" id="atleta_nome" class="form-control" required>
+                                <label>Inconsistencia</label>
+                                <input type="text" name="inconsistencia" id="inconsistencia" class="form-control" value="<?= $resultado['texto'] ?>">
                             </div>
 
-                            <div class="mb-3">
-                                <label>Ano de Nascimento</label>
-                                <input type="number" name="nascimento" id="nascimento" class="form-control" min="1900" max="<?= date('Y') ?>" required>
-                            </div>
+                            <div class="row">
+                                <div class="col-xxl">
+                                    <div class="card mb-4">
+                                        <div class="card-header d-flex align-items-center justify-content-between">
+                                            <h5 class="mb-0">Cadastre o ajuste</h5>
+                                            <small class="text-muted float-end"></small>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Registro do Atleta</label>
+                                                    <input type="text" name="registro" id="registro" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Atleta Id</label>
+                                                    <input type="number" name="atleta_id" id="atleta_id" value="<?= $resultado['atleta_id'] ?>" class="form-control" required>
+                                                </div>
 
-                            <?php foreach ($dadosResultado as $campo => $valor): ?>
-                                <div class="mb-3">
-                                    <label><?= ucfirst(str_replace('_', ' ', $campo)) ?></label>
-                                    <input
-                                        type="<?= is_numeric($valor) ? 'number' : 'text' ?>"
-                                        name="<?= $campo ?>"
-                                        class="form-control"
-                                        value="<?= htmlspecialchars($valor) ?>"
-                                        <?= ($campo === 'tempo') ? 'pattern="\d{1,2}:\d{2}\.\d{2}" placeholder="mm:ss.cc"' : '' ?>
-                                    >
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Campeonato Id</label>
+                                                    <input type="number" name="campeonato_id" id="campeonato_id" value="<?= $resultado['campeonato_id'] ?>" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Prova Id</label>
+                                                    <input type="number" name="prova_id" id="prova_id" value="<?= $resultado['prova_id'] ?>" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Colocação</label>
+                                                    <input type="text" name="colocacao" id="colocacao" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Série</label>
+                                                    <input type="text" name="serie" id="serie" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Raia</label>
+                                                    <input type="text" name="raia" id="raia" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Nome do Atleta</label>
+                                                    <input type="text" name="atleta" id="atleta_nome" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Ano de Nascimento</label>
+                                                    <input type="number" name="nascimento" id="nascimento" class="form-control" min="1900" max="<?= date('Y') ?>" required>
+                                                </div>
+
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Entidade</label>
+                                                    <input type="text" name="entidade" id="entidade" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Tempo</label>
+                                                    <input type="text" name="tempo" id="tempo" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Pontos</label>
+                                                    <input type="number" name="pontos" id="pontos" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label>Indíce</label>
+                                                    <input type="number" name="indice" id="indice" class="form-control" min="0" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            <?php endforeach; ?>
+                            </div>
+
 
                             <button type="submit" class="btn btn-primary">Salvar</button>
-                            <a href="<?php BASE_URL ?>/private/resultado" class="btn btn-secondary">Voltar</a>
+                            <a href="<?php echo BASE_URL ?>/private/resultado" class="btn btn-secondary">Voltar</a>
                         </form>
                     </div>
                 </div>
@@ -103,10 +149,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script>
     $(document).ready(function () {
         $("#registro").on("blur", function () {
-            const registro = $(this).val().trim();
+            var registro = $(this).val().trim();
             if (registro.length === 0) return;
-
-            $.get(<?php BASE_URL ?>"/private/inconsistencia/buscar_atleta.php", { registro: registro }, function (data) {
+            console.log("Resposta recebida:", registro);
+            $.get("<?php echo BASE_URL ?>/private/inconsistencia/buscar_atleta.php", { registro: registro }, function (data) {
                 console.log("Resposta recebida:", data);
                 if (data && data.id) {
                     $("#atleta_id").val(data.id);
@@ -117,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $("#atleta_nome").val("");
                     $("#nascimento").val("");
                 }
-            }, "json");
+            });
         });
     });
     </script>

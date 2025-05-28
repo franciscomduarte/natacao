@@ -37,6 +37,7 @@ $atletas = $atletaObj->listar();
                             <thead>
                                 <tr>
                                     <th>id</th>
+                                    <th>Campeonato</th>
                                     <th>Prova</th>
                                     <th>Texto</th>
                                     <th>Ações</th>
@@ -46,11 +47,12 @@ $atletas = $atletaObj->listar();
                                 <?php foreach ($atletas as $a): ?>
                                     <tr>
                                         <td><?= htmlspecialchars($a['id']) ?></td>
+                                        <td><?= htmlspecialchars($a['campeonato_id']) ?></td>
                                         <td><?= htmlspecialchars($a['prova_id']) ?></td>
                                         <td><?= htmlspecialchars($a['texto']) ?></td>
                                         <td>
-                                            <a href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/private/inconsistencia/form.php?id=<?= $a['id'] ?>" class="btn btn-sm btn-primary">Editar</a>
-                                            <a href="<?php $_SERVER['DOCUMENT_ROOT'] . BASE_URL ?>/private/inconsistencia/excluir.php?id=<?= $a['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza?')">Excluir</a>
+                                            <a href="<?php echo BASE_URL ?>/private/inconsistencia/form.php?id=<?= $a['id'] ?>&campeonato_id=<?= $a['campeonato_id'] ?>&prova_id=<?= $a['prova_id'] ?>" class="btn btn-sm btn-primary">Editar</a>
+                                            <a href="<?php echo BASE_URL ?>/private/inconsistencia/excluir.php?id=<?= $a['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza?')">Excluir</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
