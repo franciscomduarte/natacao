@@ -6,7 +6,7 @@ $db = new Conexao();
 $pdo = $db->conectar();
 
 $atletaObj = new Inconsistencia($pdo);
-$atletas = $atletaObj->listar();
+$atletas = $atletaObj->listarNaoReconhecidas();
 ?>
 
 <style>

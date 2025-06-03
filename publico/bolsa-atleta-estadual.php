@@ -4,10 +4,16 @@ include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/head.php");
 
 $db = new Conexao();
 $pdo = $db->conectar();
-$obj = new Resultado($pdo);
+$obj = new BolsaAtletaCalculator($pdo);
 
 $ano = $_GET['ano'] ?? date('Y');
-$dados = $obj->calcularBolsaAtletaEstadual($ano);
+$dadosCO = $obj->calcularBolsaAtleta($ano, 'centro-oeste-1-sem', 'estadual', BolsaAtletaCalculator::$pontuacaoCentroOeste);
+$dadosBrasilienseInverno = $obj->calcularBolsaAtleta($ano, 'brasiliense-inverno', 'estadual', BolsaAtletaCalculator::$pontuacaoBrasilienseAbsoluto);
+$dadosBraInverno = $obj->calcularBolsaAtleta($ano, 'brasileiro-inverno', 'estadual', BolsaAtletaCalculator::$pontuacaoBrasileiro);
+$dadosCO2 = $obj->calcularBolsaAtleta($ano, 'centro-oeste-2-sem', 'estadual', BolsaAtletaCalculator::$pontuacaoCentroOeste);
+$dadosBrasilienseVerao = $obj->calcularBolsaAtleta($ano, 'brasiliense-verao', 'estadual', BolsaAtletaCalculator::$pontuacaoBrasiliense);
+$dadosBraVerao = $obj->calcularBolsaAtleta($ano, 'brasileiro-verao', 'estadual', BolsaAtletaCalculator::$pontuacaoBrasileiro);
+
 ?>
 <style>
     .container-resultados {
@@ -40,10 +46,9 @@ $dados = $obj->calcularBolsaAtletaEstadual($ano);
                         </select>
                     </form>
 
-                    <table id="tabelaResultados" class="table table-striped table-bordered">
+                    <table id="tabelaBolsa" class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Nome</th>
                                 <th>Registro</th>
                                 <th>Ano Nasc.</th>
@@ -58,33 +63,74 @@ $dados = $obj->calcularBolsaAtletaEstadual($ano);
                             </tr>
                         </thead>
                         <tbody>
-                            <?php
-                            $rank = 1;
-                            foreach ($dados as $atleta):
-                                $provas = "";
-                                foreach ($atleta['provas'] as $prova):
-                                    if($provas == ""){
-                                        $provas = $prova;
-                                    } else {
-                                        $provas .= " <br> " . $prova;
+                        <?php
+                            // Função auxiliar para consolidar os dados
+                            function mergeDadosPorAtleta($dados, &$ranking, $coluna) {
+                                foreach ($dados as $atleta) {
+                                    $registro = $atleta['registro'];
+                                    if (!isset($ranking[$registro])) {
+                                        $ranking[$registro] = [
+                                            'nome' => $atleta['nome'],
+                                            'registro' => $registro,
+                                            'nascimento' => $atleta['nascimento'],
+                                            'provas' => [
+                                                'co1' => '-',
+                                                'br_inverno' => '-',
+                                                'bra_inverno' => '-',
+                                                'co2' => '-',
+                                                'br_verao' => '-',
+                                                'bra_verao' => '-'
+                                            ],
+                                            'pontos_por_competicao' => [
+                                                'co1' => 0,
+                                                'br_inverno' => 0,
+                                                'bra_inverno' => 0,
+                                                'co2' => 0,
+                                                'br_verao' => 0,
+                                                'bra_verao' => 0
+                                            ],
+                                            'pontos' => 0
+                                        ];
                                     }
-                                endforeach;
+                            
+                                    $provas = implode("<br>", $atleta['provas'] ?? []);
+                                    $ranking[$registro]['provas'][$coluna] = $provas;
+                                    $ranking[$registro]['pontos_por_competicao'][$coluna] += $atleta['pontos'];
+                                }
+                            }
+
+                            // Consolidando todos os dados
+                            $ranking = [];
+
+                            mergeDadosPorAtleta($dadosCO, $ranking, 'co1');
+                            mergeDadosPorAtleta($dadosBrasilienseInverno, $ranking, 'br_inverno');
+                            mergeDadosPorAtleta($dadosBraInverno, $ranking, 'bra_inverno');
+                            mergeDadosPorAtleta($dadosCO2, $ranking, 'co2');
+                            mergeDadosPorAtleta($dadosBrasilienseVerao, $ranking, 'br_verao');
+                            mergeDadosPorAtleta($dadosBraVerao, $ranking, 'bra_verao');
+
+                            foreach ($ranking as &$atleta) {
+                                $atleta['pontos'] = array_sum($atleta['pontos_por_competicao']);
+                            }
+                            unset($atleta);
+
+                            foreach ($ranking as $atleta):
                             ?>
                             <tr>
-                                <td><?= $rank++ ?></td>
                                 <td><?= htmlspecialchars($atleta['nome']) ?></td>
                                 <td><?= htmlspecialchars($atleta['registro']) ?></td>
                                 <td><?= htmlspecialchars($atleta['nascimento']) ?></td>
-                                <td><?= $provas ?></td>
+                                <td><?= $atleta['provas']['co1'] ?></td>
                                 <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td><?= $atleta['provas']['br_inverno'] ?></td>
+                                <td><?= $atleta['provas']['bra_inverno'] ?></td>
+                                <td><?= $atleta['provas']['co2'] ?></td>
+                                <td><?= $atleta['provas']['br_verao'] ?></td>
+                                <td><?= $atleta['provas']['bra_verao'] ?></td>
                                 <td><strong><?= number_format($atleta['pontos'], 2) ?></strong></td>
                             </tr>
                             <?php endforeach; ?>
+
                         </tbody>
                     </table>
 
@@ -98,5 +144,51 @@ $dados = $obj->calcularBolsaAtletaEstadual($ano);
     </div>
 </div>
 
+
+
 <?php include($_SERVER['DOCUMENT_ROOT'] . BASE_URL . "/footer.php"); ?>
+
+<script>
+
+    $(document).ready(function() {
+        $('#tabelaBolsa').DataTable({
+            paging: true,
+            searching: true,
+            ordering: true,
+            responsive: true,
+            dom: 'Bfrtip',
+            order: [[10, 'desc']], // <- ordena pela coluna Total Pontos (11ª coluna), decrescente
+            buttons: [
+                { extend: 'copy', className: 'btn btn-outline-secondary' },
+                { extend: 'csv', className: 'btn btn-outline-secondary' },
+                { extend: 'excel', className: 'btn btn-success' },
+                { extend: 'print', className: 'btn btn-outline-secondary' }
+            ],
+            language: {
+                search: "Pesquisar:",
+                lengthMenu: "Mostrar _MENU_ registros por página",
+                info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                paginate: {
+                    first: "Primeiro",
+                    last: "Último",
+                    next: "Próximo",
+                    previous: "Anterior"
+                },
+                buttons: {
+                    copy: "Copiar",
+                    csv: "CSV",
+                    excel: "Excel",
+                    print: "Imprimir"
+                }
+            },
+            columnDefs: [
+                { targets: [2, 3], className: 'text-wrap' },
+                { targets: '_all', className: 'align-middle' }
+            ]
+        });
+    });
+
+
+</script>
+
 </body>

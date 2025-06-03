@@ -12,6 +12,12 @@ class Inconsistencia {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function listarNaoReconhecidas() {
+        $stmt = $this->conn->prepare("SELECT * FROM linha_nao_reconhecida WHERE situacao = 'Não Reconhecido'");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function buscarPorId($id) {
         $stmt = $this->conn->prepare("SELECT * FROM linha_nao_reconhecida WHERE id = ?");
         $stmt->execute([$id]);
@@ -24,7 +30,7 @@ class Inconsistencia {
     }
 
     public function atualizarSituacao($id) {
-        $stmt = $this->conn->prepare("UPDATE linha_nao_reconhecida SET situacao = 'Reconhecido' FROM linha_nao_reconhecida WHERE id = ?");
+        $stmt = $this->conn->prepare("UPDATE linha_nao_reconhecida SET situacao = 'Reconhecido' WHERE id = ?");
         return $stmt->execute([$id]);
     }
 }

@@ -12,8 +12,6 @@ class Usuario {
         $stmt->execute([$email]);
         $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        var_dump($usuario);
-
         if ($usuario && md5($senha) == $usuario['senha']) {
             // Remove a senha antes de retornar o usuário
             unset($usuario['senha']);

@@ -29,18 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $r->pontos = $_REQUEST['pontos'] ?? null;
         $r->indice = $_REQUEST['indice'] ?? null;
 
-        var_dump($r);
-        exit;
-
         if($r->inserir()) {
             $resultado = $resultadoObj->atualizarSituacao($id);
         }
-        #echo "editar";
-    } else {
-        echo "salvar";
     }
-    #header("Location: index.php");
-    exit;
+    header("Location: index.php");
 }
 ?>
 
