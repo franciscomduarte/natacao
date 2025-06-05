@@ -27,9 +27,9 @@ class Atleta {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function inserir($registro, $nome, $nascimento) {
+    public function inserir() {
         $stmt = $this->conn->prepare("INSERT INTO atleta (registro, nome, nascimento) VALUES (?, ?, ?)");
-        return $stmt->execute([$registro, $nome, $nascimento]);
+        return $stmt->execute([$this->registro, $this->nome, $this->nascimento]);
     }
 
     public function atualizar($id, $registro, $nome, $nascimento) {

@@ -6,7 +6,7 @@ include_once('utils.php');
 define('APP_ROOT', dirname(__DIR__));
 
 // Caminho base para links (ajuste se a app estiver em uma subpasta)
-if ($_SERVER['HTTP_HOST'] === 'localhost:83') {
+if ($_SERVER['HTTP_HOST'] === 'localhost:83' || $_SERVER['HTTP_HOST'] === 'localhost') {
     define('BASE_URL', '/natacao');
 } else {
     define('BASE_URL', '');
